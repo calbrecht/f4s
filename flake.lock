@@ -20,15 +20,9 @@
       "inputs": {
         "emacs-overlay": "emacs-overlay",
         "init-leafs": "init-leafs",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "nodejs": [
-          "nodejs"
-        ],
-        "rust": [
-          "rust"
-        ]
+        "nixpkgs": "nixpkgs",
+        "nodejs": "nodejs",
+        "rust": "rust"
       },
       "locked": {
         "narHash": "sha256-WQYx4OAzwhYGS5y8L7VJHlQlKkZmjR+MjbweC9H9mww=",
@@ -141,7 +135,52 @@
         "type": "github"
       }
     },
+    "nixpkgs-mozilla_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603906276,
+        "narHash": "sha256-RsNPnEKd7BcogwkqhaV5kI/HuNC4flH/OQCC/4W5y/8=",
+        "owner": "mozilla",
+        "repo": "nixpkgs-mozilla",
+        "rev": "8c007b60731c07dd7a052cce508de3bb1ae849b4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mozilla",
+        "repo": "nixpkgs-mozilla",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1609779634,
+        "narHash": "sha256-LYNAH7Pv9IyoIs7di0rg6vnSC+VxhXhX94LXq04hsOE=",
+        "path": "/nix/store/7a8cxxrbmv9hw9csxbkdlv7bp63hwqmd-source",
+        "rev": "1a57d96edd156958b12782e8c8b6a374142a7248",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
     "nodejs": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "narHash": "sha256-91C+EwVnBGdC5veIkShZTQ52UzpGquQeOIbYRpvWNCM=",
+        "path": "../nodejs",
+        "type": "path"
+      },
+      "original": {
+        "path": "../nodejs",
+        "type": "path"
+      }
+    },
+    "nodejs_2": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
@@ -162,15 +201,29 @@
         "emacs": "emacs",
         "firefox-nightly": "firefox-nightly",
         "global-cursor-theme": "global-cursor-theme",
-        "nixpkgs": "nixpkgs",
-        "nodejs": "nodejs",
-        "rust": "rust",
+        "nixpkgs": "nixpkgs_2",
+        "nodejs": "nodejs_2",
+        "rust": "rust_2",
         "wayland": "wayland"
       }
     },
     "rust": {
       "inputs": {
         "nixpkgs-mozilla": "nixpkgs-mozilla"
+      },
+      "locked": {
+        "narHash": "sha256-XoX2ubsgP2J0LD4fiAtlpAWkCf3XQVQ5ZxOikzr8Go0=",
+        "path": "../rust",
+        "type": "path"
+      },
+      "original": {
+        "path": "../rust",
+        "type": "path"
+      }
+    },
+    "rust_2": {
+      "inputs": {
+        "nixpkgs-mozilla": "nixpkgs-mozilla_2"
       },
       "locked": {
         "narHash": "sha256-XoX2ubsgP2J0LD4fiAtlpAWkCf3XQVQ5ZxOikzr8Go0=",
