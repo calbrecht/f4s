@@ -1,0 +1,3 @@
+[submodule "firefox-nightly"]
+	path = firefox-nightly
+	url = https://github.com/calbrecht/firefox-nightly-flake.git
