@@ -2,7 +2,14 @@
   description = "Local nixpkgs overlays flake";
 
   inputs = {
-    emacs = { url = path:./emacs; };
+    emacs = {
+      url = path:./emacs;
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        nodejs.follows = "nodejs";
+        rust.follows = "rust";
+      };
+    };
     firefox-nightly = { url = path:./firefox-nightly; inputs.nixpkgs.follows = "nixpkgs"; };
     global-cursor-theme = { url = path:./global-cursor-theme; };
     nodejs = { url = path:./nodejs; inputs.nixpkgs.follows = "nixpkgs"; };
