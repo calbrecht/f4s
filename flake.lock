@@ -20,7 +20,9 @@
       "inputs": {
         "emacs-overlay": "emacs-overlay",
         "init-leafs": "init-leafs",
-        "nixpkgs": "nixpkgs",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
         "nodejs": "nodejs",
         "rust": "rust"
       },
@@ -151,19 +153,6 @@
         "type": "github"
       }
     },
-    "nixpkgs_2": {
-      "locked": {
-        "lastModified": 1609779634,
-        "narHash": "sha256-LYNAH7Pv9IyoIs7di0rg6vnSC+VxhXhX94LXq04hsOE=",
-        "path": "/nix/store/7a8cxxrbmv9hw9csxbkdlv7bp63hwqmd-source",
-        "rev": "1a57d96edd156958b12782e8c8b6a374142a7248",
-        "type": "path"
-      },
-      "original": {
-        "id": "nixpkgs",
-        "type": "indirect"
-      }
-    },
     "nodejs": {
       "inputs": {
         "nixpkgs": [
@@ -201,7 +190,7 @@
         "emacs": "emacs",
         "firefox-nightly": "firefox-nightly",
         "global-cursor-theme": "global-cursor-theme",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": "nixpkgs",
         "nodejs": "nodejs_2",
         "rust": "rust_2",
         "wayland": "wayland"
