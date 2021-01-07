@@ -59,7 +59,7 @@
         ]
       },
       "locked": {
-        "narHash": "sha256-p1LZJHgIZxT61eUUUxjFwn3rJYQZM/gxSJMN5jR4szY=",
+        "narHash": "sha256-Alnr8flYWlrpQo4tLgQ3IY6ulHTbFPZXQRE77adgL4k=",
         "path": "./firefox-nightly",
         "type": "path"
       },
