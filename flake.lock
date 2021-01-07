@@ -59,7 +59,7 @@
         ]
       },
       "locked": {
-        "narHash": "sha256-UOpxfMWW+nVtaLPHhpoDw2CCLeYC8CWRQkKJD7lgjq8=",
+        "narHash": "sha256-p1LZJHgIZxT61eUUUxjFwn3rJYQZM/gxSJMN5jR4szY=",
         "path": "./firefox-nightly",
         "type": "path"
       },
@@ -71,17 +71,17 @@
     "gecko-dev": {
       "flake": false,
       "locked": {
-        "lastModified": 1609914876,
-        "narHash": "sha256-ux4Qxt8M8dyQrTdp/WfEXiAOrmwx0ZPLolfDbEQu9c8=",
+        "lastModified": 1609953081,
+        "narHash": "sha256-H1HTH/hQLfcgeVD3uWQl1C5LrD2ogDqcYlXfEFI5fAs=",
         "owner": "mozilla",
         "repo": "gecko-dev",
-        "rev": "ef900cd2258d4c5d968093f612f807d96e6e7c98",
+        "rev": "519f913527b0d9d5097d290d5731cff6b2991fe0",
         "type": "github"
       },
       "original": {
         "owner": "mozilla",
         "repo": "gecko-dev",
-        "rev": "ef900cd2258d4c5d968093f612f807d96e6e7c98",
+        "rev": "519f913527b0d9d5097d290d5731cff6b2991fe0",
         "type": "github"
       }
     },
