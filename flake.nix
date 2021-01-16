@@ -4,7 +4,7 @@
   inputs = {
     emacs = { url = github:calbrecht/f4s-emacs; inputs.nixpkgs.follows = "nixpkgs"; };
     firefox-nightly = {
-      url = github:calbrecht/firefox-nightly-flake;
+      url = github:calbrecht/f4s-firefox-nightly;
       inputs.nixpkgs.follows = "nixpkgs";
     };
     global-cursor-theme = { url = github:calbrecht/f4s-global-cursor-theme; };

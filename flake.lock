@@ -64,16 +64,16 @@
         "nss": "nss"
       },
       "locked": {
-        "lastModified": 1610823125,
-        "narHash": "sha256-jY4Q7VQptovnB27JYvbtayOieaSiBFgu5U+SkJBXT/E=",
+        "lastModified": 1610830873,
+        "narHash": "sha256-m3pQqfjvNZU0aNdaALfOd/WfquYi0WOrkz3LR5eCfwY=",
         "owner": "calbrecht",
-        "repo": "firefox-nightly-flake",
-        "rev": "1cacc9c18c106778c4e1df93e17391959dd2e090",
+        "repo": "f4s-firefox-nightly",
+        "rev": "66497184791811367c70ae8621dbd64c2ca301d6",
         "type": "github"
       },
       "original": {
         "owner": "calbrecht",
-        "repo": "firefox-nightly-flake",
+        "repo": "f4s-firefox-nightly",
         "type": "github"
       }
     },
@@ -214,18 +214,16 @@
         "nss-dev": "nss-dev"
       },
       "locked": {
-        "dir": "nss",
-        "lastModified": 1610799583,
-        "narHash": "sha256-u67TZ/yfSzClSQ9SJBwKq0213w9yzt2L4iMc8ja4h5Q=",
+        "lastModified": 1610830683,
+        "narHash": "sha256-hSSYoUD2T9r3U/d8ePWjNcv9ZTSTVH7sSG6P+Bl8ybw=",
         "owner": "calbrecht",
-        "repo": "firefox-nightly-flake",
-        "rev": "7078dbe76b6ca942ce200af9e903fd1905c60b95",
+        "repo": "f4s-nss",
+        "rev": "9d0bb01ebe0dfc79b2581dd6d1a90a81c315a5bb",
         "type": "github"
       },
       "original": {
-        "dir": "nss",
         "owner": "calbrecht",
-        "repo": "firefox-nightly-flake",
+        "repo": "f4s-nss",
         "type": "github"
       }
     },
