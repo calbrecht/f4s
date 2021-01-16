@@ -320,11 +320,11 @@
         "unstableSmall": "unstableSmall"
       },
       "locked": {
-        "lastModified": 1610816513,
-        "narHash": "sha256-RSzFZYFFu21+J4xMw+Iw7W24Zudy8mkwrH77vB8/MvA=",
+        "lastModified": 1610827619,
+        "narHash": "sha256-dq7tbHDzuhmmJW2Xc/CDRY63g+U//ZnRy2uHYylqTc4=",
         "owner": "colemickens",
         "repo": "nixpkgs-wayland",
-        "rev": "6e1e0da0b74c138f112ddb8b29d4c7f3ccc9560f",
+        "rev": "ddc44124f80c19c0a41aa4b0da94fafc987c37bd",
         "type": "github"
       },
       "original": {
