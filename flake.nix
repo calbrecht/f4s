@@ -2,11 +2,19 @@
   description = "Local nixpkgs overlays flake";
 
   inputs = {
-    emacs = { url = path:./emacs; inputs.nixpkgs.follows = "nixpkgs"; };
-    firefox-nightly = { url = path:./firefox-nightly; inputs.nixpkgs.follows = "nixpkgs"; };
-    global-cursor-theme = { url = path:./global-cursor-theme; };
-    nodejs = { url = path:./nodejs; inputs.nixpkgs.follows = "nixpkgs"; };
-    rust = { url = path:./rust; };
+    emacs = {
+      url = github:calbrecht/f4s?dir=emacs;
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.rust.follows = "rust";
+      inputs.nodejs.follows = "nodejs";
+    };
+    firefox-nightly = {
+      url = github:calbrecht/firefox-nightly-flake;
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    global-cursor-theme = { url = github:calbrecht/f4s?dir=global-cursor-theme; };
+    nodejs = { url = github:calbrecht/f4s?dir=nodejs; inputs.nixpkgs.follows = "nixpkgs"; };
+    rust = { url = github:calbrecht/f4s?dir=rust; };
     wayland = { url = github:colemickens/nixpkgs-wayland; inputs.nixpkgs.follows = "nixpkgs"; };
   };
 
