@@ -96,18 +96,16 @@
     },
     "global-cursor-theme": {
       "locked": {
-        "dir": "global-cursor-theme",
-        "lastModified": 1610825407,
-        "narHash": "sha256-ti2Vj/mn3CoE64om3S90DirD7MqaybhI9uIWDIaYXzo=",
+        "lastModified": 1610828816,
+        "narHash": "sha256-IWllqk9yp+hxgQVQceSqtEKa5x4ClGOs6pUHfKgjR68=",
         "owner": "calbrecht",
-        "repo": "f4s",
-        "rev": "0a7a709c92c85e1ce56ebeb419c4a5693e1c783d",
+        "repo": "f4s-global-cursor-theme",
+        "rev": "9dc9e7144ff678f24017def5d8bb6ba2bc0d7d15",
         "type": "github"
       },
       "original": {
-        "dir": "global-cursor-theme",
         "owner": "calbrecht",
-        "repo": "f4s",
+        "repo": "f4s-global-cursor-theme",
         "type": "github"
       }
     },
