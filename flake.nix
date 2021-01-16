@@ -2,12 +2,7 @@
   description = "Local nixpkgs overlays flake";
 
   inputs = {
-    emacs = {
-      url = github:calbrecht/f4s?dir=emacs;
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.rust.follows = "rust";
-      inputs.nodejs.follows = "nodejs";
-    };
+    emacs = { url = github:calbrecht/f4s?dir=emacs; inputs.nixpkgs.follows = "nixpkgs"; };
     firefox-nightly = {
       url = github:calbrecht/firefox-nightly-flake;
       inputs.nixpkgs.follows = "nixpkgs";
