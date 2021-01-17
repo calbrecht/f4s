@@ -11,6 +11,7 @@
     nodejs = { url = github:calbrecht/f4s-nodejs; inputs.nixpkgs.follows = "nixpkgs"; };
     rust = { url = github:calbrecht/f4s-rust; };
     wayland = { url = github:colemickens/nixpkgs-wayland; inputs.nixpkgs.follows = "nixpkgs"; };
+    nix-zsh-completions-src = { url = github:Ma27/nix-zsh-completions/flakes; flake = false; };
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
@@ -18,12 +19,26 @@
       system = "x86_64-linux";
       pkgs = import nixpkgs {
         inherit system;
-        overlays = with self.overlays; [ rust wayland nodejs emacs firefox-nightly ];
+        overlays = with self.overlays; [
+          nix-zsh-completions
+          rust
+          wayland
+          nodejs
+          emacs
+          firefox-nightly
+        ];
       };
     in
     {
       legacyPackages."${system}" = pkgs;
 
-      overlays = nixpkgs.lib.mapAttrs (_: input: input.overlay) inputs;
+      overlays = (nixpkgs.lib.mapAttrs (_: input: input.overlay) inputs) //
+        {
+          nix-zsh-completions = (final: prev: {
+            nix-zsh-completions = prev.nix-zsh-completions.overrideAttrs (prev.lib.const {
+              src = inputs.nix-zsh-completions-src;
+            });
+          });
+        };
     };
 }

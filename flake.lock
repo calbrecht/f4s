@@ -121,6 +121,23 @@
         "type": "path"
       }
     },
+    "nix-zsh-completions-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1600188236,
+        "narHash": "sha256-3HVYez/wt7EP8+TlhTppm968Wl8x5dXuGU0P+8xNDpo=",
+        "owner": "Ma27",
+        "repo": "nix-zsh-completions",
+        "rev": "939c48c182e9d018eaea902b1ee9d00a415dba86",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Ma27",
+        "ref": "flakes",
+        "repo": "nix-zsh-completions",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1610749131,
@@ -249,6 +266,7 @@
         "emacs": "emacs",
         "firefox-nightly": "firefox-nightly",
         "global-cursor-theme": "global-cursor-theme",
+        "nix-zsh-completions-src": "nix-zsh-completions-src",
         "nixpkgs": "nixpkgs",
         "nodejs": "nodejs_2",
         "rust": "rust_2",
