@@ -27,11 +27,11 @@
         "rust": "rust"
       },
       "locked": {
-        "lastModified": 1612177743,
-        "narHash": "sha256-AazQ6n7Bp5IB/IXz+YPztzJh75FXJutk4sOlAVVFV+Y=",
+        "lastModified": 1612178779,
+        "narHash": "sha256-4LmsItSgwLNKeogjdaHnyMV4iuUl4gcXhi9LeLmbhSQ=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "33ee871d443ec8709188cc16079477b145ce54b0",
+        "rev": "208ed5604e97f9daa22ecb488a4b87de1dea9d64",
         "type": "github"
       },
       "original": {
