@@ -32,6 +32,7 @@
     in
     {
       legacyPackages."${system}" = pkgs;
+      defaultPackage."${system}" = pkgs.nix-zsh-completions;
 
       overlays = (nixpkgs.lib.mapAttrs (_: input: input.overlay) inputs) //
         {
