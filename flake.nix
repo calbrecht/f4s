@@ -12,9 +12,10 @@
     rust = { url = github:calbrecht/f4s-rust; };
     wayland = { url = github:colemickens/nixpkgs-wayland; inputs.nixpkgs.follows = "nixpkgs"; };
     nix-zsh-completions-src = { url = github:Ma27/nix-zsh-completions/flakes; flake = false; };
+    nixpkgs_steam_fix = { url = path:/ws/nixpkgs; };
   };
 
-  outputs = { self, nixpkgs, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs_steam_fix, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -29,9 +30,18 @@
           firefox-nightly
         ];
       };
+      steamfixpkgs = import nixpkgs_steam_fix {
+        inherit system;
+        config = { allowUnfree = true; };
+        overlays = with self.overlays; [
+          wayland
+        ];
+      };
     in
     {
-      legacyPackages."${system}" = pkgs;
+      legacyPackages."${system}" = pkgs // {
+        steam = steamfixpkgs.steam;
+      };
       defaultPackage."${system}" = pkgs.nix-zsh-completions;
 
       overlays = (nixpkgs.lib.mapAttrs (_: input: input.overlay) inputs) //
