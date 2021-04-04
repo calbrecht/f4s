@@ -209,6 +209,17 @@
         "type": "indirect"
       }
     },
+    "nixpkgs_steam_fix": {
+      "locked": {
+        "narHash": "sha256-8na/63iGR8lqqZ5JmgPNZqCxCxrnhLFUbxnexBY6EaQ=",
+        "path": "/ws/nixpkgs",
+        "type": "path"
+      },
+      "original": {
+        "path": "/ws/nixpkgs",
+        "type": "path"
+      }
+    },
     "nodejs": {
       "inputs": {
         "nixpkgs": [
@@ -332,6 +343,7 @@
         "global-cursor-theme": "global-cursor-theme",
         "nix-zsh-completions-src": "nix-zsh-completions-src",
         "nixpkgs": "nixpkgs_2",
+        "nixpkgs_steam_fix": "nixpkgs_steam_fix",
         "nodejs": "nodejs_2",
         "rust": "rust_2",
         "wayland": "wayland"
