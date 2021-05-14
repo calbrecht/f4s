@@ -21,7 +21,6 @@
         inherit system;
         config = { allowUnfree = true; };
         overlays = with self.overlays; [
-          nix-zsh-completions
           rust
           wayland
           nodejs
