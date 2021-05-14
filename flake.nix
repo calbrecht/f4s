@@ -11,7 +11,6 @@
     nodejs = { url = github:calbrecht/f4s-nodejs; inputs.nixpkgs.follows = "nixpkgs"; };
     rust = { url = github:calbrecht/f4s-rust; };
     wayland = { url = github:colemickens/nixpkgs-wayland; inputs.nixpkgs.follows = "nixpkgs"; };
-    nix-zsh-completions-src = { url = github:Ma27/nix-zsh-completions/flakes; flake = false; };
     nixpkgs_steam_fix = { url = path:/ws/nixpkgs; };
   };
 
@@ -44,13 +43,6 @@
       };
       defaultPackage."${system}" = pkgs.nix-zsh-completions;
 
-      overlays = (nixpkgs.lib.mapAttrs (_: input: input.overlay) inputs) //
-        {
-          nix-zsh-completions = (final: prev: {
-            nix-zsh-completions = prev.nix-zsh-completions.overrideAttrs (prev.lib.const {
-              src = inputs.nix-zsh-completions-src;
-            });
-          });
-        };
+      overlays = (nixpkgs.lib.mapAttrs (_: input: input.overlay) inputs);
     };
 }
