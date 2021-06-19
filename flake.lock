@@ -27,11 +27,11 @@
         "rust": "rust"
       },
       "locked": {
-        "lastModified": 1624096681,
-        "narHash": "sha256-gnulSoEZBID0ZC5kQ+GkEljwZUEAWXquYl/syRCj83s=",
+        "lastModified": 1624097660,
+        "narHash": "sha256-af3wpCWuEJzUTas6meC39up0EXoJ+8ix6+biqD9bMN0=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "98e6dce3a96efc2451baf7fda436a6b5a48180d7",
+        "rev": "85f460ee40e042b0b36adecf78add4101f863f0a",
         "type": "github"
       },
       "original": {
@@ -42,11 +42,11 @@
     },
     "emacs-overlay": {
       "locked": {
-        "lastModified": 1624071285,
-        "narHash": "sha256-Ot1iOkkzZmsBqx97RzZDhDBsiGAiCS83EeyWunSg/r8=",
+        "lastModified": 1624097579,
+        "narHash": "sha256-vy447LhWdLaikwXx3BtNdlY4rmgNM35fwZzZ5SyY/4M=",
         "owner": "nix-community",
         "repo": "emacs-overlay",
-        "rev": "84d5cef80f7ec4ead6fe8939d071d68d2967b2d9",
+        "rev": "eb561e58db5ab3b52b1157da189c48a27fb7dca9",
         "type": "github"
       },
       "original": {
