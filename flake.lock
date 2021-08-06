@@ -194,7 +194,7 @@
     },
     "nixpkgs_steam_fix": {
       "locked": {
-        "narHash": "sha256-0wANwqbETzSuPl3cLhRGE0iB03Ra1SXi0NMlaPm7poY=",
+        "narHash": "sha256-nZTcLPyQ5/yA4FwK6GbUhUGbsRi6EQ4oIz4LZnNeJtA=",
         "path": "/ws/nixpkgs",
         "type": "path"
       },
