@@ -28,11 +28,11 @@
         "rust": "rust"
       },
       "locked": {
-        "lastModified": 1631528830,
-        "narHash": "sha256-4HDHI6Pwpyt2KJ3pmQQf1hYMlI6gInltsl3zZIr3CIM=",
+        "lastModified": 1631556073,
+        "narHash": "sha256-PkcjcSeFQok4WXDcpG7KoL0A8jn5txB0XauPCrbLh5s=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "9e2439d8fc586249b303cc7483b686f8e1fe2886",
+        "rev": "e624990c3f38e53efbe147ca9d8ddcb77bf3c83e",
         "type": "github"
       },
       "original": {
@@ -43,11 +43,11 @@
     },
     "emacs-overlay": {
       "locked": {
-        "lastModified": 1631525154,
-        "narHash": "sha256-5xq/Pd/2ExxI5krGkv+RZpMzxlDVQ0fuL5mWApQzwHo=",
+        "lastModified": 1631553815,
+        "narHash": "sha256-DVbU4ikIYOZmg4B2KBi2bnapZl35vcTlk5z+R1ypWu0=",
         "owner": "nix-community",
         "repo": "emacs-overlay",
-        "rev": "f1b4d7133e698565bdb73d57286da52cc48d78b6",
+        "rev": "bd9091685e329ddeff1084604e7b2ba6a3b300c2",
         "type": "github"
       },
       "original": {
@@ -77,11 +77,11 @@
         "nss": "nss"
       },
       "locked": {
-        "lastModified": 1631492952,
-        "narHash": "sha256-nTQR16tnhs4AS4tojXB5Evv4/h7RbjeecbBK5KfE/68=",
+        "lastModified": 1631535216,
+        "narHash": "sha256-BK3onBkdvjm9eDqk067RpjelCpa7Qx/y+POrlEl7dtQ=",
         "owner": "calbrecht",
         "repo": "f4s-firefox-nightly",
-        "rev": "797c6d43d81e0cc73db37d6108812047877410dc",
+        "rev": "c758b1e246a8c618b41eb26dec4f897e8e03ecef",
         "type": "github"
       },
       "original": {
@@ -93,17 +93,17 @@
     "gecko-dev": {
       "flake": false,
       "locked": {
-        "lastModified": 1631454321,
-        "narHash": "sha256-I6VgnWDZ4jfydtp8iWs9f9hvIRCodRxMNt9D6F05CH4=",
+        "lastModified": 1631509296,
+        "narHash": "sha256-lOJIypSzgKG+BzDvWmLsFERPU28LQ67Oq/p+sTrpuNY=",
         "owner": "mozilla",
         "repo": "gecko-dev",
-        "rev": "5f81c5091d442d829120e19477ba869ae5219709",
+        "rev": "d3a34b89169363b1f91eb75d4c7bdc397efb2e0c",
         "type": "github"
       },
       "original": {
         "owner": "mozilla",
         "repo": "gecko-dev",
-        "rev": "5f81c5091d442d829120e19477ba869ae5219709",
+        "rev": "d3a34b89169363b1f91eb75d4c7bdc397efb2e0c",
         "type": "github"
       }
     },
