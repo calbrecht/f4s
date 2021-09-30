@@ -26,20 +26,6 @@
           nodejs
           emacs
           firefox-nightly
-          (self: super: {
-            firefox-unwrapped = super.firefox-unwrapped.overrideAttrs (old: {
-              patches = (old.patches or [ ]) ++ [
-                (self.fetchpatch {
-                  url = "https://hg.mozilla.org/integration/autoland/raw-rev/3b856ecc00e4";
-                  sha256 = "sha256-d8IRJD6ELC3ZgEs1ES/gy2kTNu/ivoUkUNGMEUoq8r8=";
-                })
-                (self.fetchpatch {
-                  url = "https://hg.mozilla.org/mozilla-central/raw-rev/51c13987d1b8";
-                  sha256 = "sha256-C2jcoWLuxW0Ic+Mbh3UpEzxTKZInljqVdcuA9WjspoA=";
-                })
-              ];
-            });
-          })
         ];
       };
       steamfixpkgs = import nixpkgs_steam_fix {
@@ -53,7 +39,55 @@
     {
       legacyPackages."${system}" = pkgs // {
         steam = steamfixpkgs.steam;
+        silo = with pkgs; with libsForQt5; stdenv.mkDerivation {
+          pname = "silo";
+          version = "git-2021-09-19-78ba44abe8";
+          src = fetchfossil {
+            url = "https://code.jessemcclure.org/silo/";
+            rev = "78ba44abe8";
+            sha256 = "sha256-nfp520cdS9bUGQv8AfN5dK60YCmkM1gQDL8FTA4WqeM=";
+          };
+          nativeBuildInputs = [ wrapQtAppsHook pkgconf ];
+          buildInputs = [
+            qtbase
+            wayland
+            layer-shell-qt
+          ];
+          patchPhase = ''
+            substituteInPlace ./Makefile \
+            --replace '/usr/include/LayerShellQt' '${layer-shell-qt}/include/LayerShellQt' \
+            --replace '= /usr' '= ${placeholder "out"}'
+
+            substituteInPlace ./src/barwin.cpp \
+            --replace \
+            'case C | Key_Q:          end(0);            break;' \
+            'case C | Key_G:          end(0);            break;
+             case C | Key_N:          sel(+1);           break;
+             case C | Key_P:          sel(-1);           break;
+             case C | Key_F:          move(+1);          break;
+             case C | Key_B:          move(-1);          break;
+             case C | Key_E:          move(+MAX);        break;
+             case C | Key_A:          move(-MAX);        break;
+             case C | Key_D:          del(+1);           break;
+             case C | Key_H:          del(-1);           break;
+             case C | Key_K:          del(+MAX);         break;
+             case C | A | Key_H:      del(-MAX);         break;
+             case C | Key_M:          end(1);            break;
+             case C | A | Key_M:      end(2);            break;
+             case C | Key_Q:          end(0);            break;' \
+            --replace \
+            'case     Key_Tab:        sel(+1);           break;' \
+            'case     Key_Tab:        complete(0);       break;'
+          '';
+          installTargets = "install-extra";
+          postInstall = ''
+            #mkdir -p $out/etc/xdg
+            #cp -R $out/share/doc/silo $out/etc/xdg/
+          '';
+          outputs = [ "out" "dev" ];
+        };
       };
+
       defaultPackage."${system}" = pkgs.nix-zsh-completions;
 
       overlays = (nixpkgs.lib.mapAttrs (_: input: input.overlay) inputs);
