@@ -10,7 +10,8 @@
     global-cursor-theme = { url = github:calbrecht/f4s-global-cursor-theme; };
     nodejs = { url = github:calbrecht/f4s-nodejs; inputs.nixpkgs.follows = "nixpkgs"; };
     rust = { url = github:calbrecht/f4s-rust; };
-    wayland = { url = github:colemickens/nixpkgs-wayland; inputs.nixpkgs.follows = "nixpkgs"; };
+    #wayland = { url = github:colemickens/nixpkgs-wayland; inputs.nixpkgs.follows = "nixpkgs"; };
+    wayland = { url = github:calbrecht/nixpkgs-wayland/mako-svg; inputs.nixpkgs.follows = "nixpkgs"; };
     nixpkgs_steam_fix = { url = path:/ws/nixpkgs; };
   };
 
@@ -39,9 +40,6 @@
     {
       legacyPackages."${system}" = pkgs // {
         steam = steamfixpkgs.steam;
-        waylandPkgs.mako = pkgs.waylandPkgs.mako.overrideAttrs (old: {
-          nativeBuildInputs = old.nativeBuildInputs ++ [ pkgs.wrapGAppsHook ];
-        });
         silo = with pkgs; with libsForQt5; stdenv.mkDerivation {
           pname = "silo";
           version = "git-2021-09-19-78ba44abe8";
