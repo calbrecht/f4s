@@ -39,6 +39,9 @@
     {
       legacyPackages."${system}" = pkgs // {
         steam = steamfixpkgs.steam;
+        waylandPkgs.mako = pkgs.waylandPkgs.mako.overrideAttrs (old: {
+          nativeBuildInputs = old.nativeBuildInputs ++ [ pkgs.wrapGAppsHook ];
+        });
         silo = with pkgs; with libsForQt5; stdenv.mkDerivation {
           pname = "silo";
           version = "git-2021-09-19-78ba44abe8";
