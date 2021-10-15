@@ -10,8 +10,8 @@
     global-cursor-theme = { url = github:calbrecht/f4s-global-cursor-theme; };
     nodejs = { url = github:calbrecht/f4s-nodejs; inputs.nixpkgs.follows = "nixpkgs"; };
     rust = { url = github:calbrecht/f4s-rust; };
-    #wayland = { url = github:colemickens/nixpkgs-wayland; inputs.nixpkgs.follows = "nixpkgs"; };
-    wayland = { url = github:calbrecht/nixpkgs-wayland/mako-svg; inputs.nixpkgs.follows = "nixpkgs"; };
+    wayland = { url = github:colemickens/nixpkgs-wayland; inputs.nixpkgs.follows = "nixpkgs"; };
+    #wayland = { url = github:calbrecht/nixpkgs-wayland/mako-svg; inputs.nixpkgs.follows = "nixpkgs"; };
     nixpkgs_steam_fix = { url = path:/ws/nixpkgs; };
   };
 
