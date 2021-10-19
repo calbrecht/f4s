@@ -11,11 +11,9 @@
     nodejs = { url = github:calbrecht/f4s-nodejs; inputs.nixpkgs.follows = "nixpkgs"; };
     rust = { url = github:calbrecht/f4s-rust; };
     wayland = { url = github:colemickens/nixpkgs-wayland; inputs.nixpkgs.follows = "nixpkgs"; };
-    #wayland = { url = github:calbrecht/nixpkgs-wayland/mako-svg; inputs.nixpkgs.follows = "nixpkgs"; };
-    nixpkgs_steam_fix = { url = path:/ws/nixpkgs; };
   };
 
-  outputs = { self, nixpkgs, nixpkgs_steam_fix, ... }@inputs:
+  outputs = { self, nixpkgs, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -29,17 +27,9 @@
           firefox-nightly
         ];
       };
-      steamfixpkgs = import nixpkgs_steam_fix {
-        inherit system;
-        config = { allowUnfree = true; };
-        overlays = with self.overlays; [
-          wayland
-        ];
-      };
     in
     {
       legacyPackages."${system}" = pkgs // {
-        steam = steamfixpkgs.steam;
         silo = with pkgs; with libsForQt5; stdenv.mkDerivation {
           pname = "silo";
           version = "git-2021-09-19-78ba44abe8";
