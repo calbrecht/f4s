@@ -10,7 +10,7 @@
     global-cursor-theme = { url = github:calbrecht/f4s-global-cursor-theme; };
     nodejs = { url = github:calbrecht/f4s-nodejs; inputs.nixpkgs.follows = "nixpkgs"; };
     rust = { url = github:calbrecht/f4s-rust; };
-    wayland = { url = github:colemickens/nixpkgs-wayland; inputs.nixpkgs.follows = "nixpkgs"; };
+    wayland = { url = github:nix-community/nixpkgs-wayland; inputs.nixpkgs.follows = "nixpkgs"; };
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
