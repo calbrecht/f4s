@@ -20,12 +20,12 @@
         inherit system;
         config = { allowUnfree = true; };
         overlays = with self.overlays; [
+          fixups
           rust
           wayland
           nodejs
           emacs
           firefox-nightly
-          fixups
         ];
       };
     in
