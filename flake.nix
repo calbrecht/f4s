@@ -81,6 +81,13 @@
 
       defaultPackage."${system}" = pkgs.nix-zsh-completions;
 
-      overlays = (nixpkgs.lib.mapAttrs (_: input: input.overlay) inputs);
+      overlays = (nixpkgs.lib.mapAttrs (_: input: input.overlay) inputs) // {
+        fixups = (self: prev: {
+          tree = prev.tree.overrideAttrs (old: {
+            makeFlags = (nixpkgs.lib.take 2 old.makeFlags)
+            ++ (nixpkgs.lib.drop 3 old.makeFlags);
+          });
+        });
+      };
     };
 }
