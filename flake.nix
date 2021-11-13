@@ -25,6 +25,7 @@
           nodejs
           emacs
           firefox-nightly
+          fixups
         ];
       };
     in
