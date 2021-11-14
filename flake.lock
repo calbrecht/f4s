@@ -2258,11 +2258,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1636882287,
-        "narHash": "sha256-NDXqayNOzuBDglaP079d4rh4nfh6k83o/PmlUz3FMJI=",
+        "lastModified": 1636885699,
+        "narHash": "sha256-ZNlD6Xm+yiHf6vQEruB9Igoi7l6yqIf9xnT0fokZP3A=",
         "owner": "nix-community",
         "repo": "nixpkgs-wayland",
-        "rev": "755bd3e3723e7eede5b6b05fa37cb0207139ba29",
+        "rev": "956294fac27d1c8324f46fa338a04df50cbeb912",
         "type": "github"
       },
       "original": {
