@@ -1981,11 +1981,11 @@
         "nixpkgs-mozilla": "nixpkgs-mozilla_10"
       },
       "locked": {
-        "lastModified": 1636884919,
-        "narHash": "sha256-2JgEIO8wlBQhGHiJoxODqCVBO2Xy0Mm2skYKm+5Adg0=",
+        "lastModified": 1636885113,
+        "narHash": "sha256-O1rdv4c+DcX1HcahTpmCktdV0HPoBt4piHeMmmD/sqg=",
         "owner": "calbrecht",
         "repo": "f4s-rust",
-        "rev": "b414dbb495010da163ac21d58951f3708dc1b1e0",
+        "rev": "7057945e0634c6b9a67ec6065a59d4158589e10c",
         "type": "github"
       },
       "original": {
