@@ -84,6 +84,26 @@
 
       overlays = (nixpkgs.lib.mapAttrs (_: input: input.overlay) inputs) // {
         fixups = (self: prev: {
+          python3 = let
+            packageOverrides = python-self: python-super: {
+              taskw = python-super.taskw.overridePythonAttrs (old: {
+                src = prev.fetchFromGitHub {
+                  owner = "ralphbean";
+                  repo = "taskw";
+                  rev = "3baf339370c7cb4c62d52cb6736ed0cb458a57b5";
+                  sha256 = "sha256-cGTQmSATNnImYCxdGAj/yprXCUWzmeOrkWeAE3dEW3Y=";
+                };
+              });
+              bugwarrior = python-super.bugwarrior.overridePythonAttrs (old: {
+                src = prev.fetchFromGitHub {
+                  owner = "ralphbean";
+                  repo = "bugwarrior";
+                  rev = "89bff55e533569b7390848f35b9dd95b552e50ae";
+                  sha256 = "sha256-ejx6REsmf1GtlpC8lJSLqllx7+BhzjhRKTYDZmVDHIU=";
+                };
+              });
+            };
+          in prev.python3.override {inherit packageOverrides;};
         });
       };
     };
