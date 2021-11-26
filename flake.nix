@@ -31,6 +31,10 @@
     in
     {
       legacyPackages."${system}" = pkgs // {
+        vscode = pkgs.vscode-with-extensions.override {
+          vscodeExtensions = with pkgs.vscode-extensions; [ ms-vsliveshare.vsliveshare ];
+        };
+
         silo = with pkgs; with libsForQt5; stdenv.mkDerivation {
           pname = "silo";
           version = "git-2021-09-19-78ba44abe8";
