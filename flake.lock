@@ -64,6 +64,22 @@
         "type": "github"
       }
     },
+    "cachix_13": {
+      "locked": {
+        "lastModified": 1638524418,
+        "narHash": "sha256-DVNPnRpqgr8GQC3uw4Qwq5HuqDMJYV65fGBPAdudDCs=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "5854a24cfccd5d7e9d487937d65cb668ffc6831c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-21.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "cachix_2": {
       "locked": {
         "lastModified": 1636792033,
@@ -196,19 +212,19 @@
       "inputs": {
         "emacs-overlay": "emacs-overlay",
         "f4s": "f4s",
-        "init-leafs": "init-leafs_12",
+        "init-leafs": "init-leafs_13",
         "nixpkgs": [
           "nixpkgs"
         ],
-        "nodejs": "nodejs_23",
-        "rust": "rust_23"
+        "nodejs": "nodejs_25",
+        "rust": "rust_25"
       },
       "locked": {
-        "lastModified": 1637500500,
-        "narHash": "sha256-97G+qtbEUmtTrMcuKp4P9m6UckOcc9XPgb1xyAbTH64=",
+        "lastModified": 1638697851,
+        "narHash": "sha256-YgaX3B0O495JbpHKOL91BhaKdESybwLzWEqUQo34wrA=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "a9a23a14928d88d1617f150f59496c9d7028cabb",
+        "rev": "d1aaadf0d9e478aa3834a4c491ad780029c9c9c0",
         "type": "github"
       },
       "original": {
@@ -219,11 +235,11 @@
     },
     "emacs-overlay": {
       "locked": {
-        "lastModified": 1637459184,
-        "narHash": "sha256-6zntUneNOs3ik11n/s+sXd51Yt4I7KDvJtiF8Nxe3ug=",
+        "lastModified": 1638668516,
+        "narHash": "sha256-u67dzO+HVWlimD6OSXSajvkU6/c7fGp4faC48uCln7k=",
         "owner": "nix-community",
         "repo": "emacs-overlay",
-        "rev": "89c94427256d2f9960d3437e96ef93def024b215",
+        "rev": "bd45e439c084c145d67272419eaf96b978f5c2ce",
         "type": "github"
       },
       "original": {
@@ -249,6 +265,21 @@
     },
     "emacs-overlay_11": {
       "locked": {
+        "lastModified": 1636824154,
+        "narHash": "sha256-/03Sew6xVxMkVVoJQCwGQlUFvcEYw9TeiLYL4bEgLho=",
+        "owner": "nix-community",
+        "repo": "emacs-overlay",
+        "rev": "c75b7c047cc4635b0ecdedfd4ad78e1ac76e41c5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "emacs-overlay",
+        "type": "github"
+      }
+    },
+    "emacs-overlay_12": {
+      "locked": {
         "lastModified": 1636794537,
         "narHash": "sha256-LNnwJte2m6eZZYf2/oC7oEs+3padSuXjgFHkvljvEls=",
         "owner": "nix-community",
@@ -262,7 +293,7 @@
         "type": "github"
       }
     },
-    "emacs-overlay_12": {
+    "emacs-overlay_13": {
       "locked": {
         "lastModified": 1636794537,
         "narHash": "sha256-LNnwJte2m6eZZYf2/oC7oEs+3padSuXjgFHkvljvEls=",
@@ -294,11 +325,11 @@
     },
     "emacs-overlay_3": {
       "locked": {
-        "lastModified": 1637426421,
-        "narHash": "sha256-LlRwbps05ck31yf00rZqlW4SPXCVGpfXcoUXm+VmuLQ=",
+        "lastModified": 1637459184,
+        "narHash": "sha256-6zntUneNOs3ik11n/s+sXd51Yt4I7KDvJtiF8Nxe3ug=",
         "owner": "nix-community",
         "repo": "emacs-overlay",
-        "rev": "ac2998922b6b4b15a517f5bbbfc2a6098d2aa334",
+        "rev": "89c94427256d2f9960d3437e96ef93def024b215",
         "type": "github"
       },
       "original": {
@@ -324,11 +355,11 @@
     },
     "emacs-overlay_5": {
       "locked": {
-        "lastModified": 1637399921,
-        "narHash": "sha256-gABxNlp7Xz4xF+0jilExk5IedYeOe3rx/WOj2ZpdTg0=",
+        "lastModified": 1637426421,
+        "narHash": "sha256-LlRwbps05ck31yf00rZqlW4SPXCVGpfXcoUXm+VmuLQ=",
         "owner": "nix-community",
         "repo": "emacs-overlay",
-        "rev": "f6da7e363211fb0247785651489e5825ee8f29c6",
+        "rev": "ac2998922b6b4b15a517f5bbbfc2a6098d2aa334",
         "type": "github"
       },
       "original": {
@@ -339,11 +370,11 @@
     },
     "emacs-overlay_6": {
       "locked": {
-        "lastModified": 1636881202,
-        "narHash": "sha256-XmXmV7ddohRKXcVzVDdw6LB0/53gu+rjQ+vScdakKGM=",
+        "lastModified": 1637399921,
+        "narHash": "sha256-gABxNlp7Xz4xF+0jilExk5IedYeOe3rx/WOj2ZpdTg0=",
         "owner": "nix-community",
         "repo": "emacs-overlay",
-        "rev": "23c8464f4527a2b19f6b4776378dd03b8289aa85",
+        "rev": "f6da7e363211fb0247785651489e5825ee8f29c6",
         "type": "github"
       },
       "original": {
@@ -369,11 +400,11 @@
     },
     "emacs-overlay_8": {
       "locked": {
-        "lastModified": 1636824154,
-        "narHash": "sha256-/03Sew6xVxMkVVoJQCwGQlUFvcEYw9TeiLYL4bEgLho=",
+        "lastModified": 1636881202,
+        "narHash": "sha256-XmXmV7ddohRKXcVzVDdw6LB0/53gu+rjQ+vScdakKGM=",
         "owner": "nix-community",
         "repo": "emacs-overlay",
-        "rev": "c75b7c047cc4635b0ecdedfd4ad78e1ac76e41c5",
+        "rev": "23c8464f4527a2b19f6b4776378dd03b8289aa85",
         "type": "github"
       },
       "original": {
@@ -401,8 +432,53 @@
       "inputs": {
         "emacs-overlay": "emacs-overlay_10",
         "f4s": "f4s_10",
+        "init-leafs": "init-leafs_4",
+        "nixpkgs": [
+          "emacs",
+          "f4s",
+          "emacs",
+          "f4s",
+          "emacs",
+          "f4s",
+          "emacs",
+          "f4s",
+          "emacs",
+          "f4s",
+          "emacs",
+          "f4s",
+          "emacs",
+          "f4s",
+          "emacs",
+          "f4s",
+          "emacs",
+          "f4s",
+          "nixpkgs"
+        ],
+        "nodejs": "nodejs_7",
+        "rust": "rust_7"
+      },
+      "locked": {
+        "lastModified": 1636842322,
+        "narHash": "sha256-leZGFs/QmuzMgspxWB8iSPuB0JDYRa4M+nCNebu8P2w=",
+        "owner": "calbrecht",
+        "repo": "f4s-emacs",
+        "rev": "21e284b227e4a5743c1c56cdd98f5478deb72a7f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "calbrecht",
+        "repo": "f4s-emacs",
+        "type": "github"
+      }
+    },
+    "emacs_11": {
+      "inputs": {
+        "emacs-overlay": "emacs-overlay_11",
+        "f4s": "f4s_11",
         "init-leafs": "init-leafs_3",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -440,12 +516,14 @@
         "type": "github"
       }
     },
-    "emacs_11": {
+    "emacs_12": {
       "inputs": {
-        "emacs-overlay": "emacs-overlay_11",
-        "f4s": "f4s_11",
+        "emacs-overlay": "emacs-overlay_12",
+        "f4s": "f4s_12",
         "init-leafs": "init-leafs_2",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -485,11 +563,13 @@
         "type": "github"
       }
     },
-    "emacs_12": {
+    "emacs_13": {
       "inputs": {
-        "emacs-overlay": "emacs-overlay_12",
+        "emacs-overlay": "emacs-overlay_13",
         "init-leafs": "init-leafs",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -535,8 +615,37 @@
       "inputs": {
         "emacs-overlay": "emacs-overlay_2",
         "f4s": "f4s_2",
+        "init-leafs": "init-leafs_12",
+        "nixpkgs": [
+          "emacs",
+          "f4s",
+          "nixpkgs"
+        ],
+        "nodejs": "nodejs_23",
+        "rust": "rust_23"
+      },
+      "locked": {
+        "lastModified": 1637500500,
+        "narHash": "sha256-97G+qtbEUmtTrMcuKp4P9m6UckOcc9XPgb1xyAbTH64=",
+        "owner": "calbrecht",
+        "repo": "f4s-emacs",
+        "rev": "a9a23a14928d88d1617f150f59496c9d7028cabb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "calbrecht",
+        "repo": "f4s-emacs",
+        "type": "github"
+      }
+    },
+    "emacs_3": {
+      "inputs": {
+        "emacs-overlay": "emacs-overlay_3",
+        "f4s": "f4s_3",
         "init-leafs": "init-leafs_11",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "nixpkgs"
@@ -558,12 +667,14 @@
         "type": "github"
       }
     },
-    "emacs_3": {
+    "emacs_4": {
       "inputs": {
-        "emacs-overlay": "emacs-overlay_3",
-        "f4s": "f4s_3",
+        "emacs-overlay": "emacs-overlay_4",
+        "f4s": "f4s_4",
         "init-leafs": "init-leafs_10",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -587,12 +698,14 @@
         "type": "github"
       }
     },
-    "emacs_4": {
+    "emacs_5": {
       "inputs": {
-        "emacs-overlay": "emacs-overlay_4",
-        "f4s": "f4s_4",
+        "emacs-overlay": "emacs-overlay_5",
+        "f4s": "f4s_5",
         "init-leafs": "init-leafs_9",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -618,12 +731,14 @@
         "type": "github"
       }
     },
-    "emacs_5": {
+    "emacs_6": {
       "inputs": {
-        "emacs-overlay": "emacs-overlay_5",
-        "f4s": "f4s_5",
+        "emacs-overlay": "emacs-overlay_6",
+        "f4s": "f4s_6",
         "init-leafs": "init-leafs_8",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -651,12 +766,14 @@
         "type": "github"
       }
     },
-    "emacs_6": {
+    "emacs_7": {
       "inputs": {
-        "emacs-overlay": "emacs-overlay_6",
-        "f4s": "f4s_6",
+        "emacs-overlay": "emacs-overlay_7",
+        "f4s": "f4s_7",
         "init-leafs": "init-leafs_7",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -686,12 +803,14 @@
         "type": "github"
       }
     },
-    "emacs_7": {
+    "emacs_8": {
       "inputs": {
-        "emacs-overlay": "emacs-overlay_7",
-        "f4s": "f4s_7",
+        "emacs-overlay": "emacs-overlay_8",
+        "f4s": "f4s_8",
         "init-leafs": "init-leafs_6",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -723,12 +842,14 @@
         "type": "github"
       }
     },
-    "emacs_8": {
+    "emacs_9": {
       "inputs": {
-        "emacs-overlay": "emacs-overlay_8",
-        "f4s": "f4s_8",
+        "emacs-overlay": "emacs-overlay_9",
+        "f4s": "f4s_9",
         "init-leafs": "init-leafs_5",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -762,63 +883,22 @@
         "type": "github"
       }
     },
-    "emacs_9": {
-      "inputs": {
-        "emacs-overlay": "emacs-overlay_9",
-        "f4s": "f4s_9",
-        "init-leafs": "init-leafs_4",
-        "nixpkgs": [
-          "emacs",
-          "f4s",
-          "emacs",
-          "f4s",
-          "emacs",
-          "f4s",
-          "emacs",
-          "f4s",
-          "emacs",
-          "f4s",
-          "emacs",
-          "f4s",
-          "emacs",
-          "f4s",
-          "emacs",
-          "f4s",
-          "nixpkgs"
-        ],
-        "nodejs": "nodejs_7",
-        "rust": "rust_7"
-      },
-      "locked": {
-        "lastModified": 1636842322,
-        "narHash": "sha256-leZGFs/QmuzMgspxWB8iSPuB0JDYRa4M+nCNebu8P2w=",
-        "owner": "calbrecht",
-        "repo": "f4s-emacs",
-        "rev": "21e284b227e4a5743c1c56cdd98f5478deb72a7f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "calbrecht",
-        "repo": "f4s-emacs",
-        "type": "github"
-      }
-    },
     "f4s": {
       "inputs": {
         "emacs": "emacs_2",
-        "firefox-nightly": "firefox-nightly_11",
-        "global-cursor-theme": "global-cursor-theme_11",
-        "nixpkgs": "nixpkgs_32",
-        "nodejs": "nodejs_22",
-        "rust": "rust_22",
-        "wayland": "wayland_11"
+        "firefox-nightly": "firefox-nightly_12",
+        "global-cursor-theme": "global-cursor-theme_12",
+        "nixpkgs": "nixpkgs_35",
+        "nodejs": "nodejs_24",
+        "rust": "rust_24",
+        "wayland": "wayland_12"
       },
       "locked": {
-        "lastModified": 1637461588,
-        "narHash": "sha256-CccuCBAZam78D+ofl7TPu04/H2OBpyE4q3uMSNY2zVE=",
+        "lastModified": 1637930000,
+        "narHash": "sha256-UuPBhOTDNueRa8fD2V5IcFuzvH5DggblPy2Lf+upox4=",
         "owner": "calbrecht",
         "repo": "f4s",
-        "rev": "ca0436de97002f7b046a79b4a19dcc7ad8de7a24",
+        "rev": "5b5c6af37d4404b7dfd0470e234c2bdc4dbb9042",
         "type": "github"
       },
       "original": {
@@ -830,6 +910,30 @@
     "f4s_10": {
       "inputs": {
         "emacs": "emacs_11",
+        "firefox-nightly": "firefox-nightly_3",
+        "global-cursor-theme": "global-cursor-theme_3",
+        "nixpkgs": "nixpkgs_8",
+        "nodejs": "nodejs_6",
+        "rust": "rust_6",
+        "wayland": "wayland_3"
+      },
+      "locked": {
+        "lastModified": 1636842227,
+        "narHash": "sha256-ZZSPV6xS+aAS99+uX9sugYWu2XfOc6LCs9TxCchSfZs=",
+        "owner": "calbrecht",
+        "repo": "f4s",
+        "rev": "7c2b5413d71fb4b24e8121ca292ecbcc1e8e3286",
+        "type": "github"
+      },
+      "original": {
+        "owner": "calbrecht",
+        "repo": "f4s",
+        "type": "github"
+      }
+    },
+    "f4s_11": {
+      "inputs": {
+        "emacs": "emacs_12",
         "firefox-nightly": "firefox-nightly_2",
         "global-cursor-theme": "global-cursor-theme_2",
         "nixpkgs": "nixpkgs_5",
@@ -851,9 +955,9 @@
         "type": "github"
       }
     },
-    "f4s_11": {
+    "f4s_12": {
       "inputs": {
-        "emacs": "emacs_12",
+        "emacs": "emacs_13",
         "firefox-nightly": "firefox-nightly",
         "global-cursor-theme": "global-cursor-theme",
         "nixpkgs": "nixpkgs_2",
@@ -878,6 +982,30 @@
     "f4s_2": {
       "inputs": {
         "emacs": "emacs_3",
+        "firefox-nightly": "firefox-nightly_11",
+        "global-cursor-theme": "global-cursor-theme_11",
+        "nixpkgs": "nixpkgs_32",
+        "nodejs": "nodejs_22",
+        "rust": "rust_22",
+        "wayland": "wayland_11"
+      },
+      "locked": {
+        "lastModified": 1637461588,
+        "narHash": "sha256-CccuCBAZam78D+ofl7TPu04/H2OBpyE4q3uMSNY2zVE=",
+        "owner": "calbrecht",
+        "repo": "f4s",
+        "rev": "ca0436de97002f7b046a79b4a19dcc7ad8de7a24",
+        "type": "github"
+      },
+      "original": {
+        "owner": "calbrecht",
+        "repo": "f4s",
+        "type": "github"
+      }
+    },
+    "f4s_3": {
+      "inputs": {
+        "emacs": "emacs_4",
         "firefox-nightly": "firefox-nightly_10",
         "global-cursor-theme": "global-cursor-theme_10",
         "nixpkgs": "nixpkgs_29",
@@ -899,9 +1027,9 @@
         "type": "github"
       }
     },
-    "f4s_3": {
+    "f4s_4": {
       "inputs": {
-        "emacs": "emacs_4",
+        "emacs": "emacs_5",
         "firefox-nightly": "firefox-nightly_9",
         "global-cursor-theme": "global-cursor-theme_9",
         "nixpkgs": "nixpkgs_26",
@@ -923,9 +1051,9 @@
         "type": "github"
       }
     },
-    "f4s_4": {
+    "f4s_5": {
       "inputs": {
-        "emacs": "emacs_5",
+        "emacs": "emacs_6",
         "firefox-nightly": "firefox-nightly_8",
         "global-cursor-theme": "global-cursor-theme_8",
         "nixpkgs": "nixpkgs_23",
@@ -947,9 +1075,9 @@
         "type": "github"
       }
     },
-    "f4s_5": {
+    "f4s_6": {
       "inputs": {
-        "emacs": "emacs_6",
+        "emacs": "emacs_7",
         "firefox-nightly": "firefox-nightly_7",
         "global-cursor-theme": "global-cursor-theme_7",
         "nixpkgs": "nixpkgs_20",
@@ -971,9 +1099,9 @@
         "type": "github"
       }
     },
-    "f4s_6": {
+    "f4s_7": {
       "inputs": {
-        "emacs": "emacs_7",
+        "emacs": "emacs_8",
         "firefox-nightly": "firefox-nightly_6",
         "global-cursor-theme": "global-cursor-theme_6",
         "nixpkgs": "nixpkgs_17",
@@ -995,9 +1123,9 @@
         "type": "github"
       }
     },
-    "f4s_7": {
+    "f4s_8": {
       "inputs": {
-        "emacs": "emacs_8",
+        "emacs": "emacs_9",
         "firefox-nightly": "firefox-nightly_5",
         "global-cursor-theme": "global-cursor-theme_5",
         "nixpkgs": "nixpkgs_14",
@@ -1019,9 +1147,9 @@
         "type": "github"
       }
     },
-    "f4s_8": {
+    "f4s_9": {
       "inputs": {
-        "emacs": "emacs_9",
+        "emacs": "emacs_10",
         "firefox-nightly": "firefox-nightly_4",
         "global-cursor-theme": "global-cursor-theme_4",
         "nixpkgs": "nixpkgs_11",
@@ -1043,34 +1171,12 @@
         "type": "github"
       }
     },
-    "f4s_9": {
-      "inputs": {
-        "emacs": "emacs_10",
-        "firefox-nightly": "firefox-nightly_3",
-        "global-cursor-theme": "global-cursor-theme_3",
-        "nixpkgs": "nixpkgs_8",
-        "nodejs": "nodejs_6",
-        "rust": "rust_6",
-        "wayland": "wayland_3"
-      },
-      "locked": {
-        "lastModified": 1636842227,
-        "narHash": "sha256-ZZSPV6xS+aAS99+uX9sugYWu2XfOc6LCs9TxCchSfZs=",
-        "owner": "calbrecht",
-        "repo": "f4s",
-        "rev": "7c2b5413d71fb4b24e8121ca292ecbcc1e8e3286",
-        "type": "github"
-      },
-      "original": {
-        "owner": "calbrecht",
-        "repo": "f4s",
-        "type": "github"
-      }
-    },
     "firefox-nightly": {
       "inputs": {
         "gecko-dev": "gecko-dev",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -1120,6 +1226,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ],
         "nspr-dev": "nspr-dev_10",
@@ -1145,6 +1253,8 @@
         "nixpkgs": [
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ],
         "nspr-dev": "nspr-dev_11",
@@ -1168,6 +1278,8 @@
       "inputs": {
         "gecko-dev": "gecko-dev_12",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "nixpkgs"
         ],
         "nspr-dev": "nspr-dev_12",
@@ -1187,10 +1299,35 @@
         "type": "github"
       }
     },
+    "firefox-nightly_13": {
+      "inputs": {
+        "gecko-dev": "gecko-dev_13",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "nspr-dev": "nspr-dev_13",
+        "nss-dev": "nss-dev_13"
+      },
+      "locked": {
+        "lastModified": 1638664309,
+        "narHash": "sha256-AnBBneJ9QT3Qu4AgwGkjVDxYS2KSMPo19bULRsi6OZ4=",
+        "owner": "calbrecht",
+        "repo": "f4s-firefox-nightly",
+        "rev": "a4202a52c1ccc60490dc1e1e998f7d3a89f59891",
+        "type": "github"
+      },
+      "original": {
+        "owner": "calbrecht",
+        "repo": "f4s-firefox-nightly",
+        "type": "github"
+      }
+    },
     "firefox-nightly_2": {
       "inputs": {
         "gecko-dev": "gecko-dev_2",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -1252,6 +1389,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ],
         "nspr-dev": "nspr-dev_3",
@@ -1275,6 +1414,8 @@
       "inputs": {
         "gecko-dev": "gecko-dev_4",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -1328,6 +1469,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ],
         "nspr-dev": "nspr-dev_5",
@@ -1351,6 +1494,8 @@
       "inputs": {
         "gecko-dev": "gecko-dev_6",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -1396,6 +1541,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ],
         "nspr-dev": "nspr-dev_7",
@@ -1427,6 +1574,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ],
         "nspr-dev": "nspr-dev_8",
@@ -1450,6 +1599,8 @@
       "inputs": {
         "gecko-dev": "gecko-dev_9",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -1540,6 +1691,23 @@
         "owner": "mozilla",
         "repo": "gecko-dev",
         "rev": "ee77dc4fe851e643a88a6872030da2f9f18ac10b",
+        "type": "github"
+      }
+    },
+    "gecko-dev_13": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638639457,
+        "narHash": "sha256-ka/rs2sNE26FTmyvKVLV27Xd4voAIo46UoL1Gc8h+qo=",
+        "owner": "mozilla",
+        "repo": "gecko-dev",
+        "rev": "3407e72ceb5039da514c03ae61bd279b1725c3b2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mozilla",
+        "repo": "gecko-dev",
+        "rev": "3407e72ceb5039da514c03ae61bd279b1725c3b2",
         "type": "github"
       }
     },
@@ -1739,6 +1907,21 @@
         "type": "github"
       }
     },
+    "global-cursor-theme_13": {
+      "locked": {
+        "lastModified": 1610828816,
+        "narHash": "sha256-IWllqk9yp+hxgQVQceSqtEKa5x4ClGOs6pUHfKgjR68=",
+        "owner": "calbrecht",
+        "repo": "f4s-global-cursor-theme",
+        "rev": "9dc9e7144ff678f24017def5d8bb6ba2bc0d7d15",
+        "type": "github"
+      },
+      "original": {
+        "owner": "calbrecht",
+        "repo": "f4s-global-cursor-theme",
+        "type": "github"
+      }
+    },
     "global-cursor-theme_2": {
       "locked": {
         "lastModified": 1610828816,
@@ -1896,6 +2079,18 @@
       }
     },
     "init-leafs_12": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-ynGJh9ekrOL9lC4N3vMIuDCGPLtNX5t+8mmexuVNQlA=",
+        "path": "/home/alab/.emacs.i/init-leafs.el",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/alab/.emacs.i/init-leafs.el",
+        "type": "path"
+      }
+    },
+    "init-leafs_13": {
       "flake": false,
       "locked": {
         "narHash": "sha256-ynGJh9ekrOL9lC4N3vMIuDCGPLtNX5t+8mmexuVNQlA=",
@@ -2273,6 +2468,38 @@
       }
     },
     "nixpkgs-mozilla_24": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1637337116,
+        "narHash": "sha256-LKqAcdL+woWeYajs02bDQ7q8rsqgXuzhC354NoRaV80=",
+        "owner": "mozilla",
+        "repo": "nixpkgs-mozilla",
+        "rev": "cbc7435f5b0b3d17b16fb1d20cf7b616eec5e093",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mozilla",
+        "repo": "nixpkgs-mozilla",
+        "type": "github"
+      }
+    },
+    "nixpkgs-mozilla_25": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1637337116,
+        "narHash": "sha256-LKqAcdL+woWeYajs02bDQ7q8rsqgXuzhC354NoRaV80=",
+        "owner": "mozilla",
+        "repo": "nixpkgs-mozilla",
+        "rev": "cbc7435f5b0b3d17b16fb1d20cf7b616eec5e093",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mozilla",
+        "repo": "nixpkgs-mozilla",
+        "type": "github"
+      }
+    },
+    "nixpkgs-mozilla_26": {
       "flake": false,
       "locked": {
         "lastModified": 1637337116,
@@ -2777,6 +3004,45 @@
         "type": "indirect"
       }
     },
+    "nixpkgs_37": {
+      "locked": {
+        "lastModified": 1638696595,
+        "narHash": "sha256-3qDI6FFDNxG3v/itjhHr28k5xmPLEax+WUW5GkGDfPQ=",
+        "path": "/nix/store/xli74g4hmbg93mrw83b7a893yha0xim6-source",
+        "rev": "71239df3c04d1df03603bfeae6b47de2ffa77352",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_38": {
+      "locked": {
+        "lastModified": 1638696595,
+        "narHash": "sha256-3qDI6FFDNxG3v/itjhHr28k5xmPLEax+WUW5GkGDfPQ=",
+        "path": "/nix/store/xli74g4hmbg93mrw83b7a893yha0xim6-source",
+        "rev": "71239df3c04d1df03603bfeae6b47de2ffa77352",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_39": {
+      "locked": {
+        "lastModified": 1638696595,
+        "narHash": "sha256-3qDI6FFDNxG3v/itjhHr28k5xmPLEax+WUW5GkGDfPQ=",
+        "path": "/nix/store/xli74g4hmbg93mrw83b7a893yha0xim6-source",
+        "rev": "71239df3c04d1df03603bfeae6b47de2ffa77352",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
     "nixpkgs_4": {
       "locked": {
         "lastModified": 1636805840,
@@ -2881,6 +3147,8 @@
           "emacs",
           "f4s",
           "emacs",
+          "f4s",
+          "emacs",
           "nixpkgs"
         ],
         "pkgs-src": "pkgs-src"
@@ -2902,6 +3170,8 @@
     "nodejs_10": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -2950,6 +3220,8 @@
           "emacs",
           "f4s",
           "emacs",
+          "f4s",
+          "emacs",
           "nixpkgs"
         ],
         "pkgs-src": "pkgs-src_11"
@@ -2971,6 +3243,8 @@
     "nodejs_12": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -3015,6 +3289,8 @@
           "emacs",
           "f4s",
           "emacs",
+          "f4s",
+          "emacs",
           "nixpkgs"
         ],
         "pkgs-src": "pkgs-src_13"
@@ -3036,6 +3312,8 @@
     "nodejs_14": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -3076,6 +3354,8 @@
           "emacs",
           "f4s",
           "emacs",
+          "f4s",
+          "emacs",
           "nixpkgs"
         ],
         "pkgs-src": "pkgs-src_15"
@@ -3097,6 +3377,8 @@
     "nodejs_16": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -3133,6 +3415,8 @@
           "emacs",
           "f4s",
           "emacs",
+          "f4s",
+          "emacs",
           "nixpkgs"
         ],
         "pkgs-src": "pkgs-src_17"
@@ -3160,6 +3444,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ],
         "pkgs-src": "pkgs-src_18"
@@ -3181,6 +3467,8 @@
     "nodejs_19": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -3229,6 +3517,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ],
         "pkgs-src": "pkgs-src_2"
@@ -3250,6 +3540,8 @@
     "nodejs_20": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -3278,6 +3570,8 @@
           "emacs",
           "f4s",
           "emacs",
+          "f4s",
+          "emacs",
           "nixpkgs"
         ],
         "pkgs-src": "pkgs-src_21"
@@ -3299,6 +3593,8 @@
     "nodejs_22": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "nixpkgs"
@@ -3323,6 +3619,8 @@
       "inputs": {
         "nixpkgs": [
           "emacs",
+          "f4s",
+          "emacs",
           "nixpkgs"
         ],
         "pkgs-src": "pkgs-src_23"
@@ -3344,6 +3642,8 @@
     "nodejs_24": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "nixpkgs"
         ],
         "pkgs-src": "pkgs-src_24"
@@ -3362,9 +3662,54 @@
         "type": "github"
       }
     },
+    "nodejs_25": {
+      "inputs": {
+        "nixpkgs": [
+          "emacs",
+          "nixpkgs"
+        ],
+        "pkgs-src": "pkgs-src_25"
+      },
+      "locked": {
+        "lastModified": 1638697834,
+        "narHash": "sha256-BWycL3N0dIYuaw0CRpd972fZk21GxNXtRWBJ90gRF7U=",
+        "owner": "calbrecht",
+        "repo": "f4s-nodejs",
+        "rev": "ccee841153be1585ac890b6d88c1160b5f4724f6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "calbrecht",
+        "repo": "f4s-nodejs",
+        "type": "github"
+      }
+    },
+    "nodejs_26": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "pkgs-src": "pkgs-src_26"
+      },
+      "locked": {
+        "lastModified": 1638697834,
+        "narHash": "sha256-BWycL3N0dIYuaw0CRpd972fZk21GxNXtRWBJ90gRF7U=",
+        "owner": "calbrecht",
+        "repo": "f4s-nodejs",
+        "rev": "ccee841153be1585ac890b6d88c1160b5f4724f6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "calbrecht",
+        "repo": "f4s-nodejs",
+        "type": "github"
+      }
+    },
     "nodejs_3": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -3427,6 +3772,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ],
         "pkgs-src": "pkgs-src_4"
@@ -3448,6 +3795,8 @@
     "nodejs_5": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -3506,6 +3855,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ],
         "pkgs-src": "pkgs-src_6"
@@ -3527,6 +3878,8 @@
     "nodejs_7": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -3581,6 +3934,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ],
         "pkgs-src": "pkgs-src_8"
@@ -3617,6 +3972,8 @@
           "emacs",
           "f4s",
           "emacs",
+          "f4s",
+          "emacs",
           "nixpkgs"
         ],
         "pkgs-src": "pkgs-src_9"
@@ -3638,6 +3995,8 @@
     "nspr-dev": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -3716,6 +4075,18 @@
       }
     },
     "nspr-dev-src_12": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-pl+JYhaIMxFG7Lpe2yaLhihczNwZG0fU8W/Ita6ZQDg=",
+        "type": "tarball",
+        "url": "https://hg.mozilla.org/projects/nspr/archive/NSPR_4_32_RTM.zip"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://hg.mozilla.org/projects/nspr/archive/NSPR_4_32_RTM.zip"
+      }
+    },
+    "nspr-dev-src_13": {
       "flake": false,
       "locked": {
         "narHash": "sha256-pl+JYhaIMxFG7Lpe2yaLhihczNwZG0fU8W/Ita6ZQDg=",
@@ -3830,6 +4201,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "firefox-nightly",
           "nixpkgs"
         ],
@@ -3854,6 +4227,8 @@
         "nixpkgs": [
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "firefox-nightly",
           "nixpkgs"
         ],
@@ -3876,6 +4251,8 @@
     "nspr-dev_12": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "firefox-nightly",
           "nixpkgs"
         ],
@@ -3895,9 +4272,33 @@
         "type": "github"
       }
     },
+    "nspr-dev_13": {
+      "inputs": {
+        "nixpkgs": [
+          "firefox-nightly",
+          "nixpkgs"
+        ],
+        "nspr-dev-src": "nspr-dev-src_13"
+      },
+      "locked": {
+        "lastModified": 1634326191,
+        "narHash": "sha256-1j6rW1AKUPpBPKJP8z7gpNVdVu2cXh/K2HvAmae99zc=",
+        "owner": "calbrecht",
+        "repo": "f4s-nspr",
+        "rev": "bc5ba0cc055b284fb6467daefffdd8556f8d6815",
+        "type": "github"
+      },
+      "original": {
+        "owner": "calbrecht",
+        "repo": "f4s-nspr",
+        "type": "github"
+      }
+    },
     "nspr-dev_2": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -3958,6 +4359,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "firefox-nightly",
           "nixpkgs"
         ],
@@ -3980,6 +4383,8 @@
     "nspr-dev_4": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -4032,6 +4437,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "firefox-nightly",
           "nixpkgs"
         ],
@@ -4054,6 +4461,8 @@
     "nspr-dev_6": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -4098,6 +4507,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "firefox-nightly",
           "nixpkgs"
         ],
@@ -4120,6 +4531,8 @@
     "nspr-dev_8": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -4156,6 +4569,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "firefox-nightly",
           "nixpkgs"
         ],
@@ -4178,6 +4593,8 @@
     "nss-dev": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -4271,6 +4688,23 @@
       }
     },
     "nss-dev-src_12": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1634569972,
+        "narHash": "sha256-WnUslakuCWD98ftuLkICHnjQtxbl+zZjXhOXLbuxQaA=",
+        "owner": "nss-dev",
+        "repo": "nss",
+        "rev": "cea7654c90aaed1d1e29f735ce765974c08898df",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nss-dev",
+        "repo": "nss",
+        "rev": "cea7654c90aaed1d1e29f735ce765974c08898df",
+        "type": "github"
+      }
+    },
+    "nss-dev-src_13": {
       "flake": false,
       "locked": {
         "lastModified": 1634569972,
@@ -4430,6 +4864,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "firefox-nightly",
           "nixpkgs"
         ],
@@ -4454,6 +4890,8 @@
         "nixpkgs": [
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "firefox-nightly",
           "nixpkgs"
         ],
@@ -4476,6 +4914,8 @@
     "nss-dev_12": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "firefox-nightly",
           "nixpkgs"
         ],
@@ -4495,9 +4935,33 @@
         "type": "github"
       }
     },
+    "nss-dev_13": {
+      "inputs": {
+        "nixpkgs": [
+          "firefox-nightly",
+          "nixpkgs"
+        ],
+        "nss-dev-src": "nss-dev-src_13"
+      },
+      "locked": {
+        "lastModified": 1634633367,
+        "narHash": "sha256-jWwTA8FKxBljDpfRBc/ko/4hHLb/wOy/wSOqozAIH9w=",
+        "owner": "calbrecht",
+        "repo": "f4s-nss",
+        "rev": "12cf5e631f8c1c049da26f18899b5660b3e1f902",
+        "type": "github"
+      },
+      "original": {
+        "owner": "calbrecht",
+        "repo": "f4s-nss",
+        "type": "github"
+      }
+    },
     "nss-dev_2": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -4558,6 +5022,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "firefox-nightly",
           "nixpkgs"
         ],
@@ -4580,6 +5046,8 @@
     "nss-dev_4": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -4632,6 +5100,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "firefox-nightly",
           "nixpkgs"
         ],
@@ -4654,6 +5124,8 @@
     "nss-dev_6": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -4698,6 +5170,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "firefox-nightly",
           "nixpkgs"
         ],
@@ -4728,6 +5202,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "firefox-nightly",
           "nixpkgs"
         ],
@@ -4750,6 +5226,8 @@
     "nss-dev_9": {
       "inputs": {
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -5081,6 +5559,42 @@
         "type": "github"
       }
     },
+    "pkgs-src_25": {
+      "flake": false,
+      "locked": {
+        "dir": "pkgs",
+        "lastModified": 1638655903,
+        "narHash": "sha256-XxcwWDP+sGvs2DsPpuKmeMCiWrK744p+kcbDgw0Du/s=",
+        "owner": "calbrecht",
+        "repo": "f4s-nodejs",
+        "rev": "176436d5a8254613a94969c876cb0fe525dafa5b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "pkgs",
+        "owner": "calbrecht",
+        "repo": "f4s-nodejs",
+        "type": "github"
+      }
+    },
+    "pkgs-src_26": {
+      "flake": false,
+      "locked": {
+        "dir": "pkgs",
+        "lastModified": 1638655903,
+        "narHash": "sha256-XxcwWDP+sGvs2DsPpuKmeMCiWrK744p+kcbDgw0Du/s=",
+        "owner": "calbrecht",
+        "repo": "f4s-nodejs",
+        "rev": "176436d5a8254613a94969c876cb0fe525dafa5b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "pkgs",
+        "owner": "calbrecht",
+        "repo": "f4s-nodejs",
+        "type": "github"
+      }
+    },
     "pkgs-src_3": {
       "flake": false,
       "locked": {
@@ -5210,12 +5724,12 @@
     "root": {
       "inputs": {
         "emacs": "emacs",
-        "firefox-nightly": "firefox-nightly_12",
-        "global-cursor-theme": "global-cursor-theme_12",
-        "nixpkgs": "nixpkgs_35",
-        "nodejs": "nodejs_24",
-        "rust": "rust_24",
-        "wayland": "wayland_12"
+        "firefox-nightly": "firefox-nightly_13",
+        "global-cursor-theme": "global-cursor-theme_13",
+        "nixpkgs": "nixpkgs_38",
+        "nodejs": "nodejs_26",
+        "rust": "rust_26",
+        "wayland": "wayland_13"
       }
     },
     "rust": {
@@ -5541,6 +6055,44 @@
         "type": "github"
       }
     },
+    "rust_25": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_37",
+        "nixpkgs-mozilla": "nixpkgs-mozilla_25"
+      },
+      "locked": {
+        "lastModified": 1638697840,
+        "narHash": "sha256-yeeWXSO5Qs2DyB7UABwSQsGm6j27RxshBzokrlcLMWo=",
+        "owner": "calbrecht",
+        "repo": "f4s-rust",
+        "rev": "36b3925edbd70fdf8edfc1e10476b3095fd392ed",
+        "type": "github"
+      },
+      "original": {
+        "owner": "calbrecht",
+        "repo": "f4s-rust",
+        "type": "github"
+      }
+    },
+    "rust_26": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_39",
+        "nixpkgs-mozilla": "nixpkgs-mozilla_26"
+      },
+      "locked": {
+        "lastModified": 1638697840,
+        "narHash": "sha256-yeeWXSO5Qs2DyB7UABwSQsGm6j27RxshBzokrlcLMWo=",
+        "owner": "calbrecht",
+        "repo": "f4s-rust",
+        "rev": "36b3925edbd70fdf8edfc1e10476b3095fd392ed",
+        "type": "github"
+      },
+      "original": {
+        "owner": "calbrecht",
+        "repo": "f4s-rust",
+        "type": "github"
+      }
+    },
     "rust_3": {
       "inputs": {
         "nixpkgs": "nixpkgs_4",
@@ -5700,6 +6252,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ]
       },
@@ -5721,6 +6275,8 @@
       "inputs": {
         "cachix": "cachix_10",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -5748,6 +6304,8 @@
         "nixpkgs": [
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ]
       },
@@ -5769,6 +6327,8 @@
       "inputs": {
         "cachix": "cachix_12",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "nixpkgs"
         ]
       },
@@ -5786,10 +6346,33 @@
         "type": "github"
       }
     },
+    "wayland_13": {
+      "inputs": {
+        "cachix": "cachix_13",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1638622184,
+        "narHash": "sha256-Q4sqRwSphmMg/gTmvvXCB+q+bKAg1QrEMessnMOLyvQ=",
+        "owner": "nix-community",
+        "repo": "nixpkgs-wayland",
+        "rev": "f08f674a02761c1c30941e747b405ac5fe4cccca",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixpkgs-wayland",
+        "type": "github"
+      }
+    },
     "wayland_2": {
       "inputs": {
         "cachix": "cachix_2",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -5849,6 +6432,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ]
       },
@@ -5870,6 +6455,8 @@
       "inputs": {
         "cachix": "cachix_4",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -5921,6 +6508,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ]
       },
@@ -5942,6 +6531,8 @@
       "inputs": {
         "cachix": "cachix_6",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
@@ -5985,6 +6576,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ]
       },
@@ -6014,6 +6607,8 @@
           "f4s",
           "emacs",
           "f4s",
+          "emacs",
+          "f4s",
           "nixpkgs"
         ]
       },
@@ -6035,6 +6630,8 @@
       "inputs": {
         "cachix": "cachix_9",
         "nixpkgs": [
+          "emacs",
+          "f4s",
           "emacs",
           "f4s",
           "emacs",
