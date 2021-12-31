@@ -106,6 +106,14 @@
                   sha256 = "sha256-ejx6REsmf1GtlpC8lJSLqllx7+BhzjhRKTYDZmVDHIU=";
                 };
               });
+              pulseaudio-dlna = python-super.pulseaudio-dlna.overridePythonAttrs (old: {
+                src = prev.fetchFromGitHub {
+                  owner = "Cygn";
+                  repo = "pulseaudio-dlna";
+                  rev = "3cdcf84184548e91ea25fbe60f3850768e15c2a2";
+                  sha256 = nixpkgs.lib.fakeSha256; #"";
+                };
+              });
             };
           in prev.python3.override {inherit packageOverrides;};
         });
