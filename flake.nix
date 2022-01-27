@@ -35,16 +35,6 @@
           vscodeExtensions = with pkgs.vscode-extensions; [ ms-vsliveshare.vsliveshare ];
         };
 
-        waylandPkgs = pkgs.waylandPkgs // {
-          swaylock = pkgs.waylandPkgs.swaylock.overrideAttrs (old: {
-            mesonFlags = [
-              "-Dpam=enabled"
-              "-Dgdk-pixbuf=enabled"
-              "-Dman-pages=enabled"
-            ];
-          });
-        };
-
         silo = with pkgs; with libsForQt5; stdenv.mkDerivation {
           pname = "silo";
           version = "git-2021-09-19-78ba44abe8";
@@ -97,6 +87,21 @@
       defaultPackage."${system}" = pkgs.nix-zsh-completions;
 
       overlays = (nixpkgs.lib.mapAttrs (_: input: input.overlay) inputs) // {
+        wayland = (self: prev:
+        let
+          selfWaylandPkgs = inputs.wayland.overlay self prev ;
+        in
+        {
+          waylandPkgs = selfWaylandPkgs // {
+            swaylock = selfWaylandPkgs.swaylock.overrideAttrs (old: {
+              mesonFlags = [
+                "-Dpam=enabled"
+                "-Dgdk-pixbuf=enabled"
+                "-Dman-pages=enabled"
+              ];
+            });
+          };
+        });
         fixups = (self: prev: {
           python3 = let
             packageOverrides = python-self: python-super: {
