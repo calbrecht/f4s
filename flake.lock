@@ -24,8 +24,12 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "nodejs": "nodejs",
-        "rust": "rust"
+        "nodejs": [
+          "nodejs"
+        ],
+        "rust": [
+          "rust"
+        ]
       },
       "locked": {
         "lastModified": 1643462375,
@@ -153,78 +157,12 @@
         "type": "github"
       }
     },
-    "nixpkgs-mozilla_2": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1638887313,
-        "narHash": "sha256-FMYV6rVtvSIfthgC1sK1xugh3y7muoQcvduMdriz4ag=",
-        "owner": "mozilla",
-        "repo": "nixpkgs-mozilla",
-        "rev": "7c1e8b1dd6ed0043fb4ee0b12b815256b0b9de6f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "mozilla",
-        "repo": "nixpkgs-mozilla",
-        "type": "github"
-      }
-    },
-    "nixpkgs_2": {
-      "locked": {
-        "lastModified": 1643460057,
-        "narHash": "sha256-WZM8UUc53QAw94vJ045l9nyhT83RJbAynsuX/ZmINAA=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "e864ace11739104d1e7241687ced44445abcafca",
-        "type": "github"
-      },
-      "original": {
-        "id": "nixpkgs",
-        "type": "indirect"
-      }
-    },
-    "nixpkgs_3": {
-      "locked": {
-        "lastModified": 1643460057,
-        "narHash": "sha256-WZM8UUc53QAw94vJ045l9nyhT83RJbAynsuX/ZmINAA=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "e864ace11739104d1e7241687ced44445abcafca",
-        "type": "github"
-      },
-      "original": {
-        "id": "nixpkgs",
-        "type": "indirect"
-      }
-    },
     "nodejs": {
       "inputs": {
         "nixpkgs": [
-          "emacs",
           "nixpkgs"
         ],
         "pkgs-src": "pkgs-src"
-      },
-      "locked": {
-        "lastModified": 1643462360,
-        "narHash": "sha256-9C81xEHLjhQktJ2EPJd6OFTeS3GcDr5CDxvXpWRv/BY=",
-        "owner": "calbrecht",
-        "repo": "f4s-nodejs",
-        "rev": "d9e4fda0fcf5779c33bdb7bef935b544a11f0478",
-        "type": "github"
-      },
-      "original": {
-        "owner": "calbrecht",
-        "repo": "f4s-nodejs",
-        "type": "github"
-      }
-    },
-    "nodejs_2": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "pkgs-src": "pkgs-src_2"
       },
       "locked": {
         "lastModified": 1643462360,
@@ -331,58 +269,23 @@
         "type": "github"
       }
     },
-    "pkgs-src_2": {
-      "flake": false,
-      "locked": {
-        "dir": "pkgs",
-        "lastModified": 1643407844,
-        "narHash": "sha256-dNPrsO32WQD/kejx1v0HCpztyusZ1iRLaw79u8WlL6c=",
-        "owner": "calbrecht",
-        "repo": "f4s-nodejs",
-        "rev": "bee284a0fab7e253f5b57686183b82626c82f224",
-        "type": "github"
-      },
-      "original": {
-        "dir": "pkgs",
-        "owner": "calbrecht",
-        "repo": "f4s-nodejs",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "emacs": "emacs",
         "firefox-nightly": "firefox-nightly",
         "global-cursor-theme": "global-cursor-theme",
-        "nixpkgs": "nixpkgs_2",
-        "nodejs": "nodejs_2",
-        "rust": "rust_2",
+        "nixpkgs": "nixpkgs",
+        "nodejs": "nodejs",
+        "rust": "rust",
         "wayland": "wayland"
       }
     },
     "rust": {
       "inputs": {
-        "nixpkgs": "nixpkgs",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
         "nixpkgs-mozilla": "nixpkgs-mozilla"
-      },
-      "locked": {
-        "lastModified": 1643462367,
-        "narHash": "sha256-fUylCbFqFRY5DqwoqoHoKSGUDAm/DeLQrF5DKWNUJW4=",
-        "owner": "calbrecht",
-        "repo": "f4s-rust",
-        "rev": "a0504362ca6be2e2f17dd472e845c3a80fa9f7b1",
-        "type": "github"
-      },
-      "original": {
-        "owner": "calbrecht",
-        "repo": "f4s-rust",
-        "type": "github"
-      }
-    },
-    "rust_2": {
-      "inputs": {
-        "nixpkgs": "nixpkgs_3",
-        "nixpkgs-mozilla": "nixpkgs-mozilla_2"
       },
       "locked": {
         "lastModified": 1643462367,

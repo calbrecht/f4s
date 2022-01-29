@@ -5,6 +5,8 @@
     emacs = {
       url = github:calbrecht/f4s-emacs;
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.rust.follows = "rust";
+      inputs.nodejs.follows = "nodejs";
       inputs.f4s-overlays.follows = "";
     };
     firefox-nightly = {
@@ -20,6 +22,7 @@
     };
     rust = {
       url = github:calbrecht/f4s-rust;
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     wayland = {
       url = github:nix-community/nixpkgs-wayland;
