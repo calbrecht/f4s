@@ -72,11 +72,11 @@
         "nss-dev": "nss-dev"
       },
       "locked": {
-        "lastModified": 1645267560,
-        "narHash": "sha256-E89fJ5sNTWJsokvf2An/gzN9ZM46hkTeVAw2d8Xpcjk=",
+        "lastModified": 1645277146,
+        "narHash": "sha256-oo5+tjroiEm24Xg1gHyWCftG7DfJTxZffSeK2OfIPwE=",
         "owner": "calbrecht",
         "repo": "f4s-firefox-nightly",
-        "rev": "f7ade2b351137e77fd61f9d10c341d06bbb64ef2",
+        "rev": "e3715b99aaf8a00f01ca8bc892954a0d2292ad04",
         "type": "github"
       },
       "original": {
@@ -179,6 +179,34 @@
         "type": "github"
       }
     },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1645276387,
+        "narHash": "sha256-F3eTYqZK3RZ9+QZYn+FXcvlog9flz92WZ/zab8UYkUY=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f8960da2d24c6638e3743f0a8504ceb40fb8ffec",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1645276387,
+        "narHash": "sha256-F3eTYqZK3RZ9+QZYn+FXcvlog9flz92WZ/zab8UYkUY=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f8960da2d24c6638e3743f0a8504ceb40fb8ffec",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
     "nodejs": {
       "inputs": {
         "nixpkgs": [
@@ -202,10 +230,7 @@
     },
     "nspr-dev": {
       "inputs": {
-        "nixpkgs": [
-          "firefox-nightly",
-          "nixpkgs"
-        ],
+        "nixpkgs": "nixpkgs",
         "nspr-dev-src": "nspr-dev-src"
       },
       "locked": {
@@ -236,10 +261,7 @@
     },
     "nss-dev": {
       "inputs": {
-        "nixpkgs": [
-          "firefox-nightly",
-          "nixpkgs"
-        ],
+        "nixpkgs": "nixpkgs_2",
         "nss-dev-src": "nss-dev-src"
       },
       "locked": {
@@ -297,7 +319,7 @@
         "firefox-nightly": "firefox-nightly",
         "fixups": "fixups",
         "global-cursor-theme": "global-cursor-theme",
-        "nixpkgs": "nixpkgs",
+        "nixpkgs": "nixpkgs_3",
         "nodejs": "nodejs",
         "rust": "rust",
         "wayland": "wayland"
