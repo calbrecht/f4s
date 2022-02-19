@@ -7,6 +7,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.rust.follows = "rust";
       inputs.nodejs.follows = "nodejs";
+      inputs.fixups.follows = "fixups";
     };
     firefox-nightly = {
       url = github:calbrecht/f4s-firefox-nightly;
