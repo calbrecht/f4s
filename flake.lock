@@ -19,7 +19,9 @@
     "emacs": {
       "inputs": {
         "emacs-overlay": "emacs-overlay",
-        "fixups": "fixups",
+        "fixups": [
+          "fixups"
+        ],
         "init-leafs": "init-leafs",
         "nixpkgs": [
           "nixpkgs"
@@ -84,27 +86,6 @@
       }
     },
     "fixups": {
-      "inputs": {
-        "nixpkgs": [
-          "emacs",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1645275982,
-        "narHash": "sha256-soYMBBJcvJqmX3J7KBn06GLSECICLvV8rsjbd8MQVBE=",
-        "owner": "calbrecht",
-        "repo": "f4s-fixups",
-        "rev": "8837778800a1f05c83a42d6e66dbabfef060db1d",
-        "type": "github"
-      },
-      "original": {
-        "owner": "calbrecht",
-        "repo": "f4s-fixups",
-        "type": "github"
-      }
-    },
-    "fixups_2": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
@@ -314,7 +295,7 @@
       "inputs": {
         "emacs": "emacs",
         "firefox-nightly": "firefox-nightly",
-        "fixups": "fixups_2",
+        "fixups": "fixups",
         "global-cursor-theme": "global-cursor-theme",
         "nixpkgs": "nixpkgs",
         "nodejs": "nodejs",
