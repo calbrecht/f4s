@@ -2,6 +2,7 @@
   description = "Local nixpkgs overlays flake";
 
   inputs = {
+    nixpkgs.url = github:NixOS/nixpkgs/master;
     emacs = {
       url = github:calbrecht/f4s-emacs;
       inputs.nixpkgs.follows = "nixpkgs";
