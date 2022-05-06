@@ -1,35 +1,39 @@
 {
   description = "Local nixpkgs overlays flake";
 
+  nixConfig = {
+    flake-registry = https://github.com/calbrecht/f4s-registry/raw/main/flake-registry.json;
+  };
+
   inputs = {
     emacs = {
-      url = github:calbrecht/f4s-emacs;
+      url = flake:f4s-emacs;
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.rust.follows = "rust";
       inputs.nodejs.follows = "nodejs";
       inputs.fixups.follows = "fixups";
     };
     firefox-nightly = {
-      url = github:calbrecht/f4s-firefox-nightly;
+      url = flake:f4s-firefox-nightly;
       inputs.nixpkgs.follows = "nixpkgs";
     };
     fixups = {
-      url = github:calbrecht/f4s-fixups;
+      url = flake:f4s-fixups;
       inputs.nixpkgs.follows = "nixpkgs";
     };
     global-cursor-theme = {
-      url = github:calbrecht/f4s-global-cursor-theme;
+      url = flake:f4s-global-cursor-theme;
     };
     nodejs = {
-      url = github:calbrecht/f4s-nodejs;
+      url = flake:f4s-nodejs;
       inputs.nixpkgs.follows = "nixpkgs";
     };
     rust = {
-      url = github:calbrecht/f4s-rust;
+      url = flake:f4s-rust;
       inputs.nixpkgs.follows = "nixpkgs";
     };
     wayland = {
-      url = github:nix-community/nixpkgs-wayland;
+      url = flake:nixpkgs-wayland;
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
