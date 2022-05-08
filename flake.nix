@@ -114,7 +114,7 @@
       overlays = (nixpkgs.lib.mapAttrs (_: input: input.overlay) inputs) // {
         wayland = (self: prev:
         let
-          selfWaylandPkgs = inputs.wayland.overlay self prev ;
+          selfWaylandPkgs = inputs.wayland.overlays.default self prev ;
         in
         {
           waylandPkgs = selfWaylandPkgs // {
