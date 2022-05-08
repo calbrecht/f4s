@@ -5,3 +5,12 @@ rust/
 global-cursor-theme/
 update/
 action/
+.log/
+baduk/
+fixups/
+jetbrains/
+nixops/
+npm/
+old-emacs
+old-npm/
+registry/
