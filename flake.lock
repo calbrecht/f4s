@@ -35,11 +35,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1653374436,
-        "narHash": "sha256-E9/WXYFEP9QMOEc2dPXnrfe3toeRMcLvk5ec4A99nik=",
+        "lastModified": 1653378252,
+        "narHash": "sha256-f1iozamk7k2a4Izj1picYc39t7d7KAyLpVLRyMzg+zg=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "f5ac42c8c865797eee9595477e421b5ad8078c66",
+        "rev": "b17e570da51ecfe82a80a74161acec09abe21162",
         "type": "github"
       },
       "original": {
