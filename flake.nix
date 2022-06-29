@@ -111,19 +111,26 @@
 
       defaultPackage."${system}" = pkgs.nix-zsh-completions;
 
-      overlays = (nixpkgs.lib.mapAttrs (_: input: input.overlay) inputs) // {
+      overlays = with nixpkgs.lib; recursiveUpdate (mapAttrs (_: input: input.overlay) inputs) {
         wayland = (self: prev:
         let
           selfWaylandPkgs = inputs.wayland.overlays.default self prev ;
         in
         {
-          waylandPkgs = selfWaylandPkgs // {
+          waylandPkgs = recursiveUpdate selfWaylandPkgs {
             swaylock = selfWaylandPkgs.swaylock.overrideAttrs (old: {
               mesonFlags = [
                 "-Dpam=enabled"
                 "-Dgdk-pixbuf=enabled"
                 "-Dman-pages=enabled"
               ];
+            });
+            imv = selfWaylandPkgs.imv.overrideAttrs (old: {
+              src = pkgs.fetchgit {
+                url = "https://git.sr.ht/~exec64/imv";
+                rev = "c7306a6325df0282c16d60b7201b6bd963f76756";
+                sha256 = "sha256-KApnP6W/mYKjPHIhZAMgjHC/64D9JjG6hZutvH70HXw=";
+              };
             });
           };
         });
