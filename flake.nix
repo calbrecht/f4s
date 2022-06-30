@@ -43,7 +43,13 @@
       system = "x86_64-linux";
       pkgs = import nixpkgs {
         inherit system;
-        config = { allowUnfree = true; };
+        config = {
+          allowUnfree = true;
+          permittedInsecurePackages = [
+            "python2.7-urllib3-1.26.2"
+            "python2.7-pyjwt-1.7.1"
+          ];
+        };
         overlays = with self.overlays; [
           fixups
           rust
