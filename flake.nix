@@ -131,13 +131,6 @@
                 "-Dman-pages=enabled"
               ];
             });
-            imv = selfWaylandPkgs.imv.overrideAttrs (old: {
-              src = pkgs.fetchgit {
-                url = "https://git.sr.ht/~exec64/imv";
-                rev = "c7306a6325df0282c16d60b7201b6bd963f76756";
-                sha256 = "sha256-KApnP6W/mYKjPHIhZAMgjHC/64D9JjG6hZutvH70HXw=";
-              };
-            });
           };
         });
       };
