@@ -271,7 +271,7 @@
     "nix-eval-jobs": {
       "inputs": {
         "flake-parts": "flake-parts",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_3"
       },
       "locked": {
         "lastModified": 1676510875,
@@ -334,6 +334,20 @@
       }
     },
     "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1677303387,
+        "narHash": "sha256-dzAwhZ1qbb9fovwoXNM+RIHyenu0O5AckhiTvjKQlR4=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "19943b316146563a17e465576825e86a286a4b09",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_3": {
       "locked": {
         "lastModified": 1676510113,
         "narHash": "sha256-TBB/1Fv1/S7si9/Dy/DwYCoJBBZSwJu2zzQzagW8P48=",
@@ -492,6 +506,7 @@
         "nixpkgs": "nixpkgs",
         "nodejs": "nodejs",
         "rust": "rust",
+        "tutnix-alab": "tutnix-alab",
         "wayland": "wayland"
       }
     },
@@ -513,6 +528,21 @@
       "original": {
         "id": "f4s-rust",
         "type": "indirect"
+      }
+    },
+    "tutnix-alab": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1677307164,
+        "narHash": "sha256-C61Ki0brU8y5o6oVlzDR/ew4dJik0Gu3c4TIUCwVyac=",
+        "path": "/f4s/home",
+        "type": "path"
+      },
+      "original": {
+        "path": "/f4s/home",
+        "type": "path"
       }
     },
     "utils": {
