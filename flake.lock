@@ -535,8 +535,8 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1677309982,
-        "narHash": "sha256-KQxZeJsSt8yfHQKWd6KNquB44Y36NvwNemB35lbC+Ig=",
+        "lastModified": 1677310238,
+        "narHash": "sha256-VmWwyq65qYPes7jNy3MISuzRMcMdx402WF4uvdqhA7k=",
         "path": "/f4s/home",
         "type": "path"
       },
