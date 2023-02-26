@@ -19,11 +19,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1677409499,
+        "lastModified": 1677411119,
         "narHash": "sha256-7CsUo68nqOennkDILZAuRz/0WhsaWyg5lJKwUNNvXtE=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "da4c00971c5707c0836eaa195cbb961ccafbade4",
+        "rev": "d567f33559985153f4b903b572ef9779ad621a7a",
         "type": "github"
       },
       "original": {
@@ -524,8 +524,8 @@
         ]
       },
       "locked": {
-        "lastModified": 1677409309,
-        "narHash": "sha256-fjmnJhny9nRXl9huHMo+hFb3xylIn0LqgMJPD51kueM=",
+        "lastModified": 1677410578,
+        "narHash": "sha256-r+SKwQwjvyJQ5x11yZbnJaKNCIHj4Bv4fR//Bq/g+2s=",
         "path": "/f4s/home",
         "type": "path"
       },
@@ -574,11 +574,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1677406459,
-        "narHash": "sha256-gMxeUBWCWmycpB3G2gQ6IHYZGGD2VyrifNSYSNfNfC8=",
+        "lastModified": 1677409909,
+        "narHash": "sha256-Xo1DmH4ePMKk6yfccV03dw9IqgcE3j1G3tYPuCxq2oY=",
         "owner": "nix-community",
         "repo": "nixpkgs-wayland",
-        "rev": "48f3103e8ac6ab3209836a35e8932bb7b9be054e",
+        "rev": "63a728947a09a7f49935178f3530dd640bb4e7d6",
         "type": "github"
       },
       "original": {
