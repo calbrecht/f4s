@@ -36,8 +36,8 @@
       url = github:nix-community/nixpkgs-wayland;
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    home-manager = {
-      url = "github:nix-community/home-manager";
+    home = {
+      url = path:/f4s/home;
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -91,8 +91,16 @@
         });
       };
 
-      nixosModules = {
-        inherit (inputs.home-manager.nixosModules) home-manager;
+      nixosModules = inputs.home.nixosModules { inherit pkgs; };
+
+      homeConfigurations = inputs.home.homeConfigurations { inherit pkgs; };
+
+      apps."${system}".hm = {
+        type = "app";
+        program = (pkgs.writeScriptBin "run-home-manager.sh" ''
+          nix flake lock --update-input home && nix run ./#home-manager -- "''${@}"
+        '') + /bin/run-home-manager.sh;
       };
+
     };
 }

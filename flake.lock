@@ -193,10 +193,28 @@
         "type": "indirect"
       }
     },
+    "home": {
+      "inputs": {
+        "home-manager": "home-manager",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1677412019,
+        "narHash": "sha256-2iS1u6RVlWPX1pbHHkkCLjTtPqxKMkaVZ+lyXy8447M=",
+        "path": "/f4s/home",
+        "type": "path"
+      },
+      "original": {
+        "path": "/f4s/home",
+        "type": "path"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
-          "tutnix-alab",
+          "home",
           "nixpkgs"
         ],
         "utils": "utils_2"
@@ -489,10 +507,10 @@
         "firefox-nightly": "firefox-nightly",
         "fixups": "fixups",
         "global-cursor-theme": "global-cursor-theme",
+        "home": "home",
         "nixpkgs": "nixpkgs",
         "nodejs": "nodejs",
         "rust": "rust",
-        "tutnix-alab": "tutnix-alab",
         "wayland": "wayland"
       }
     },
@@ -514,24 +532,6 @@
       "original": {
         "id": "f4s-rust",
         "type": "indirect"
-      }
-    },
-    "tutnix-alab": {
-      "inputs": {
-        "home-manager": "home-manager",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1677410578,
-        "narHash": "sha256-r+SKwQwjvyJQ5x11yZbnJaKNCIHj4Bv4fR//Bq/g+2s=",
-        "path": "/f4s/home",
-        "type": "path"
-      },
-      "original": {
-        "path": "/f4s/home",
-        "type": "path"
       }
     },
     "utils": {
