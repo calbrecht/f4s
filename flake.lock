@@ -19,11 +19,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1677600101,
+        "lastModified": 1677600205,
         "narHash": "sha256-8GROBgcPzVU8/CDWoH/ZdAcNze1kts7tJZpW7oY8xFg=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "df190bd7a8ce116033805974a55f2669f5cd6e46",
+        "rev": "e5f3adb9324c5ad91514499f95580af8e8b8220e",
         "type": "github"
       },
       "original": {
@@ -202,8 +202,8 @@
         "sops-nix": "sops-nix"
       },
       "locked": {
-        "lastModified": 1677600074,
-        "narHash": "sha256-gMN9oGChr1eyGCiHSAZWS2hYuMoOxUKUOsSOzvORKOc=",
+        "lastModified": 1677600187,
+        "narHash": "sha256-B2Vh0DM0ANx4Oulhimw62lgxHdFJs8JA3B2kIol37ss=",
         "path": "/f4s/home",
         "type": "path"
       },
