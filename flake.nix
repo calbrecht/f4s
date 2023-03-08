@@ -98,7 +98,8 @@
       apps."${system}".hm = {
         type = "app";
         program = (pkgs.writeScriptBin "run-home-manager.sh" ''
-          nix flake lock --update-input home && nix run ./#home-manager -- "''${@}"
+          nix flake lock --offline --connect-timeout 1 --timeout 1 --update-input home \
+          && nix run --offline --connect-timeout 1 --timeout 1 ./#home-manager -- "''${@}"
         '') + /bin/run-home-manager.sh;
       };
 
