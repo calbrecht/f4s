@@ -202,8 +202,8 @@
         "sops-nix": "sops-nix"
       },
       "locked": {
-        "lastModified": 1678726860,
-        "narHash": "sha256-OGblPPFeqAJgkmwdpNQIk/BZps/7BAExJDwUkqo0y+k=",
+        "lastModified": 1678997749,
+        "narHash": "sha256-2OCQd9kL7XB0Ym5V5ZSTMWJuIKqPUiuO5IHui6F4Hd8=",
         "path": "/f4s/home",
         "type": "path"
       },
@@ -221,11 +221,11 @@
         "utils": "utils_2"
       },
       "locked": {
-        "lastModified": 1678729503,
-        "narHash": "sha256-j+h4Bdqbe+qjzhxdhkRmVgSx2lxJ8HnKeYcAhhnd1zM=",
+        "lastModified": 1678967335,
+        "narHash": "sha256-oFppZaAVRA0G/aVPvjtWaQI5EQ2dZ5LgbEKfsBmKQgA=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "24c1a6335e3da6a3ecf82f33ac50c2ad66aee346",
+        "rev": "b832390db376fbbf44115904cfab6680fb42e076",
         "type": "github"
       },
       "original": {
