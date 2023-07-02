@@ -227,8 +227,8 @@
         "tidal-connect": "tidal-connect"
       },
       "locked": {
-        "lastModified": 1688285773,
-        "narHash": "sha256-Re7YiGurDXimS4MtUtfzjao62J7X6J77NfgnjOkqvw8=",
+        "lastModified": 1688320944,
+        "narHash": "sha256-UQpdNyG0eUAwTFb5g0u3dMVJj1w0HNFKsAQFjUgkG9w=",
         "path": "/f4s/home",
         "type": "path"
       },
@@ -697,8 +697,8 @@
         "nixpkgs_insecure": "nixpkgs_insecure"
       },
       "locked": {
-        "lastModified": 1688285920,
-        "narHash": "sha256-z0DUY7HEhaheIQW86RvWjgc6zqJoEJngjCqC19sayKI=",
+        "lastModified": 1688320499,
+        "narHash": "sha256-0kE4UK1HR6kDx5FYirc6G60udolAMOLTCr6TTuD3jFk=",
         "path": "/ws/play/tidal-bin/tcon/flake",
         "type": "path"
       },

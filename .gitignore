@@ -12,6 +12,7 @@ fixups/
 jetbrains/
 nixops/
 npm/
+streamer/
 old-emacs
 old-npm/
 registry/
