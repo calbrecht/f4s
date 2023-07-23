@@ -19,11 +19,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1690112903,
-        "narHash": "sha256-YcCPO3hI4cltJyMFtizUMFsGen28WHMqcYQjAsGSrNg=",
+        "lastModified": 1690112945,
+        "narHash": "sha256-e2HTN2Bqjq75t9AhLa/eK+0Ko7R+6GtFA4jbZ6bx8ec=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "e252b35d896ed12c6d501fe6466e1dccffbcb72e",
+        "rev": "b7823f3cf087c0914af616b2ae322911bbd776cc",
         "type": "github"
       },
       "original": {
@@ -227,8 +227,8 @@
         "tidal-connect": "tidal-connect"
       },
       "locked": {
-        "lastModified": 1690112930,
-        "narHash": "sha256-3/ATeKfOifY1eYXB2WoiJqV80XB2pA9Fji2Nn7psRxA=",
+        "lastModified": 1690112964,
+        "narHash": "sha256-nzwAQspHNNfzungsTd8V7SQdeLnd7TF1+2lGHcqiYKw=",
         "path": "/f4s/home",
         "type": "path"
       },
@@ -294,7 +294,6 @@
       "inputs": {
         "nixpkgs": [
           "emacs",
-          "rnix-lsp",
           "nixpkgs"
         ]
       },
