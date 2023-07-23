@@ -227,8 +227,8 @@
         "tidal-connect": "tidal-connect"
       },
       "locked": {
-        "lastModified": 1690112906,
-        "narHash": "sha256-ybeBYLhwcXSNjZWqrpwvXq15aRiBZlZW7Fk5Mx1J08Y=",
+        "lastModified": 1690112930,
+        "narHash": "sha256-3/ATeKfOifY1eYXB2WoiJqV80XB2pA9Fji2Nn7psRxA=",
         "path": "/f4s/home",
         "type": "path"
       },
