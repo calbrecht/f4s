@@ -19,11 +19,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1690113171,
+        "lastModified": 1690113346,
         "narHash": "sha256-YcCPO3hI4cltJyMFtizUMFsGen28WHMqcYQjAsGSrNg=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "e51049287c358a613735f92ffcc859509cefbe76",
+        "rev": "8dbf9a0f6970df47f647c231f2f913484b3e7adc",
         "type": "github"
       },
       "original": {
@@ -227,8 +227,8 @@
         "tidal-connect": "tidal-connect"
       },
       "locked": {
-        "lastModified": 1690113175,
-        "narHash": "sha256-nzwAQspHNNfzungsTd8V7SQdeLnd7TF1+2lGHcqiYKw=",
+        "lastModified": 1690113349,
+        "narHash": "sha256-k9jLEhTxp+7S8uIrjfr+DfHFDu26deeSJUnnMHtF8z8=",
         "path": "/f4s/home",
         "type": "path"
       },
