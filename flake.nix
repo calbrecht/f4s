@@ -45,7 +45,25 @@
 
   outputs = { self, nixpkgs, flake-utils, ... }@inputs:
   {
-    overlays = nixpkgs.lib.mapAttrs (_: i: i.overlays.default or i.overlay) inputs;
+    overlays = with nixpkgs.lib; recursiveUpdate (
+      mapAttrs (_: i: i.overlays.default or i.overlay) inputs
+    ) {
+      wayland = (self: prev:
+      let
+        selfWaylandPkgs = inputs.wayland.overlays.default self prev ;
+      in
+      {
+        waylandPkgs = recursiveUpdate selfWaylandPkgs {
+          #swaylock = selfWaylandPkgs.swaylock.overrideAttrs (old: {
+          #  mesonFlags = [
+          #    "-Dpam=enabled"
+          #    "-Dgdk-pixbuf=enabled"
+          #    "-Dman-pages=enabled"
+          #  ];
+          #});
+        };
+      });
+    };
   }
   // (flake-utils.lib.eachDefaultSystem (system: let
     pkgs = import nixpkgs {
