@@ -45,25 +45,7 @@
 
   outputs = { self, nixpkgs, flake-utils, ... }@inputs:
   {
-    overlays = with nixpkgs.lib; recursiveUpdate (
-      mapAttrs (_: i: i.overlays.default or i.overlay) inputs
-    ) {
-      wayland = (self: prev:
-      let
-        selfWaylandPkgs = inputs.wayland.overlays.default self prev ;
-      in
-      {
-        waylandPkgs = recursiveUpdate selfWaylandPkgs {
-          #swaylock = selfWaylandPkgs.swaylock.overrideAttrs (old: {
-          #  mesonFlags = [
-          #    "-Dpam=enabled"
-          #    "-Dgdk-pixbuf=enabled"
-          #    "-Dman-pages=enabled"
-          #  ];
-          #});
-        };
-      });
-    };
+    overlays = nixpkgs.lib.mapAttrs (_: i: i.overlays.default or i.overlay) inputs;
   }
   // (flake-utils.lib.eachDefaultSystem (system: let
     pkgs = import nixpkgs {
@@ -85,15 +67,6 @@
       ];
     };
   in {
-    apps = {
-      hm = flake-utils.lib.mkApp {
-        drv = (pkgs.writeScriptBin "run-home-manager.sh" ''
-          pushd /f4s/home
-          nix run home-manager -- --flake ./ "''${@}"
-        '');
-      };
-    };
-    packages = { default = pkgs.hello; };
     legacyPackages = pkgs // {
       vscode = pkgs.vscode-with-extensions.override {
         vscodeExtensions = with pkgs.vscode-extensions; [ ms-vsliveshare.vsliveshare ];
