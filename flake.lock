@@ -21,11 +21,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1690186066,
-        "narHash": "sha256-25zcuQeF4o1YAPKq72PHG3LZHUb2/4gA3KgM0Q5I3Ok=",
+        "lastModified": 1690186102,
+        "narHash": "sha256-pWimgsDVwnWimEhBRweAzGsX6n01rlaF+5wntpZrSMU=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "e82ac551dc22edc6c96103d158c56767ea9ea527",
+        "rev": "34411304d23dd2c97fe637ec0dbc91682699020b",
         "type": "github"
       },
       "original": {
@@ -263,7 +263,6 @@
       "inputs": {
         "nixpkgs": [
           "emacs",
-          "rnix-lsp",
           "nixpkgs"
         ]
       },
