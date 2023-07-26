@@ -19,19 +19,29 @@
   };
 
   outputs = inputs: let
-    inherit (inputs.nixpkgs.lib) attrVals getAttrs mapAttrs recursiveUpdate;
+    inherit (inputs.nixpkgs.lib) attrVals getAttrs foldl' flip extends mapAttrs recursiveUpdate;
     overlaysFrom = [
       "fixups"
       "rust"
-      "wayland"
       "nodejs"
       "emacs"
+      "wayland"
       "global-cursor-theme"
       "firefox-nightly"
     ];
   in inputs.flake-parts.lib.mkFlake { inherit inputs; } (top: {
     systems = (import inputs.systems);
-    flake.overlays = mapAttrs (n: v:
+    flake.overlays = {
+      default = final: prev: foldl' (flip extends) (_: prev) [
+        top.config.flake.overlays.fixups
+        top.config.flake.overlays.rust
+        top.config.flake.overlays.nodejs
+        top.config.flake.overlays.emacs
+        top.config.flake.overlays.wayland
+        top.config.flake.overlays.global-cursor-theme
+        top.config.flake.overlays.firefox-nightly
+      ] final;
+    } // mapAttrs (n: v:
       v.overlays.default or v.overlays.${n} or v.overlay
     ) (getAttrs overlaysFrom inputs);
     perSystem = { config, system, pkgs, lib, ... }: {
@@ -44,7 +54,9 @@
             "python2.7-pyjwt-1.7.1"
           ];
         };
-        overlays = attrVals overlaysFrom top.config.flake.overlays;
+        overlays = [
+          top.config.flake.overlays.default
+        ];
       };
       legacyPackages = recursiveUpdate pkgs {
         vscode = pkgs.vscode-with-extensions.override {
