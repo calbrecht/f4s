@@ -6,11 +6,9 @@
   };
 
   inputs = {
+    nixpkgs.url = flake:nixpkgs;
     systems.url = github:nix-systems/x86_64-linux;
-    flake-utils = {
-      url = github:numtide/flake-utils;
-      inputs.systems.follows = "systems";
-    };
+    flake-parts.url = flake:flake-parts;
     emacs = {
       url = flake:f4s-emacs;
       inputs.nixpkgs.follows = "nixpkgs";
@@ -43,34 +41,39 @@
     };
   };
 
-  outputs = { self, nixpkgs, flake-utils, ... }@inputs:
-  {
-    overlays = nixpkgs.lib.mapAttrs (_: i: i.overlays.default or i.overlay) inputs;
-  }
-  // (flake-utils.lib.eachDefaultSystem (system: let
-    pkgs = import nixpkgs {
-      inherit system;
-      config = {
-        allowUnfree = true;
-        permittedInsecurePackages = [
-          "python2.7-urllib3-1.26.2"
-          "python2.7-pyjwt-1.7.1"
-        ];
+  outputs = inputs: let
+    inherit (inputs.nixpkgs.lib) attrVals getAttrs mapAttrs recursiveUpdate;
+    overlaysFrom = [
+      "fixups"
+      "rust"
+      "wayland"
+      "nodejs"
+      "emacs"
+      "global-cursor-theme"
+      "firefox-nightly"
+    ];
+  in inputs.flake-parts.lib.mkFlake { inherit inputs; } (top: {
+    systems = (import inputs.systems);
+    flake.overlays = mapAttrs (n: v:
+      v.overlays.${n} or v.overlays.default or v.overlay
+    ) (getAttrs overlaysFrom inputs);
+    perSystem = { config, system, pkgs, lib, ... }: {
+      _module.args.pkgs = import inputs.nixpkgs {
+        inherit system;
+        config = {
+          allowUnfree = true;
+          permittedInsecurePackages = [
+            "python2.7-urllib3-1.26.2"
+            "python2.7-pyjwt-1.7.1"
+          ];
+        };
+        overlays = attrVals overlaysFrom top.config.flake.overlays;
       };
-      overlays = with self.overlays; [
-        fixups
-        rust
-        wayland
-        nodejs
-        emacs
-        firefox-nightly
-      ];
-    };
-  in {
-    legacyPackages = pkgs // {
-      vscode = pkgs.vscode-with-extensions.override {
-        vscodeExtensions = with pkgs.vscode-extensions; [ ms-vsliveshare.vsliveshare ];
+      legacyPackages = recursiveUpdate pkgs {
+        vscode = pkgs.vscode-with-extensions.override {
+          vscodeExtensions = with pkgs.vscode-extensions; [ ms-vsliveshare.vsliveshare ];
+        };
       };
     };
-  }));
+  });
 }
