@@ -6,39 +6,16 @@
   };
 
   inputs = {
-    nixpkgs.url = flake:nixpkgs;
-    systems.url = github:nix-systems/x86_64-linux;
+    emacs.url = flake:f4s-emacs;
+    firefox-nightly.url = flake:f4s-firefox-nightly;
+    fixups.url = flake:f4s-fixups;
     flake-parts.url = flake:flake-parts;
-    emacs = {
-      url = flake:f4s-emacs;
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.rust.follows = "rust";
-      inputs.nodejs.follows = "nodejs";
-      inputs.fixups.follows = "fixups";
-    };
-    firefox-nightly = {
-      url = flake:f4s-firefox-nightly;
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    fixups = {
-      url = flake:f4s-fixups;
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    global-cursor-theme = {
-      url = flake:f4s-global-cursor-theme;
-    };
-    nodejs = {
-      url = flake:f4s-nodejs;
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    rust = {
-      url = flake:f4s-rust;
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    wayland = {
-      url = github:nix-community/nixpkgs-wayland;
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    global-cursor-theme.url = flake:f4s-global-cursor-theme;
+    nixpkgs.url = flake:nixpkgs;
+    nodejs.url = flake:f4s-nodejs;
+    rust.url = flake:f4s-rust;
+    systems.url = github:nix-systems/x86_64-linux;
+    wayland.url = github:nix-community/nixpkgs-wayland;
   };
 
   outputs = inputs: let
