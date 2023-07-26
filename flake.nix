@@ -32,7 +32,7 @@
   in inputs.flake-parts.lib.mkFlake { inherit inputs; } (top: {
     systems = (import inputs.systems);
     flake.overlays = mapAttrs (n: v:
-      v.overlays.${n} or v.overlays.default or v.overlay
+      v.overlays.default or v.overlays.${n} or v.overlay
     ) (getAttrs overlaysFrom inputs);
     perSystem = { config, system, pkgs, lib, ... }: {
       _module.args.pkgs = import inputs.nixpkgs {
