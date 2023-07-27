@@ -15,23 +15,28 @@
     nodejs.url = flake:f4s-nodejs;
     rust.url = flake:f4s-rust;
     systems.url = github:nix-systems/x86_64-linux;
-    wayland.url = github:nix-community/nixpkgs-wayland;
+    # alacritty fails with "interface 'wl_surface' has no event 2" since a sway-unwrapped update
+    #wayland.url = github:nix-community/nixpkgs-wayland/2022e1a48a42069c0e5357150504206a0199c94b; # bad
+    wayland.url = github:nix-community/nixpkgs-wayland/62ab946a25ad84ce9ce6efb877656af7d733a2f3;  # last known good
   };
 
   outputs = inputs: let
-    inherit (inputs.nixpkgs.lib) attrVals getAttrs foldl' flip extends mapAttrs recursiveUpdate;
-    overlaysFrom = [
-      "fixups"
-      "rust"
-      "nodejs"
-      "emacs"
-      "wayland"
-      "global-cursor-theme"
-      "firefox-nightly"
-    ];
+    inherit (inputs.nixpkgs.lib)
+      extends
+      flip
+      foldl'
+      recursiveUpdate
+    ;
   in inputs.flake-parts.lib.mkFlake { inherit inputs; } (top: {
     systems = (import inputs.systems);
     flake.overlays = {
+      fixups = inputs.fixups.overlays.default;
+      rust = inputs.rust.overlay;
+      nodejs = inputs.nodejs.overlay;
+      emacs = inputs.emacs.overlays.default;
+      wayland = inputs.wayland.overlays.default;
+      global-cursor-theme = inputs.global-cursor-theme.overlay;
+      firefox-nightly = inputs.firefox-nightly.overlay;
       default = final: prev: foldl' (flip extends) (_: prev) [
         top.config.flake.overlays.fixups
         top.config.flake.overlays.rust
@@ -40,29 +45,25 @@
         top.config.flake.overlays.wayland
         top.config.flake.overlays.global-cursor-theme
         top.config.flake.overlays.firefox-nightly
+        (final: prev: {
+          # remove waybar overlay once alacritty starts again from nixpkgs-wayland
+          waybar = prev.waybar.override { inherit (prev) spdlog; };
+          vscode = prev.vscode-with-extensions.override {
+            vscodeExtensions = with prev.vscode-extensions; [ ms-vsliveshare.vsliveshare ];
+          };
+        })
       ] final;
-    } // mapAttrs (n: v:
-      v.overlays.default or v.overlays.${n} or v.overlay
-    ) (getAttrs overlaysFrom inputs);
+    };
     perSystem = { config, system, pkgs, lib, ... }: {
       _module.args.pkgs = import inputs.nixpkgs {
         inherit system;
         config = {
           allowUnfree = true;
-          permittedInsecurePackages = [
-            "python2.7-urllib3-1.26.2"
-            "python2.7-pyjwt-1.7.1"
-          ];
+          permittedInsecurePackages = [];
         };
-        overlays = [
-          top.config.flake.overlays.default
-        ];
+        overlays = [ top.config.flake.overlays.default ];
       };
-      legacyPackages = recursiveUpdate pkgs {
-        vscode = pkgs.vscode-with-extensions.override {
-          vscodeExtensions = with pkgs.vscode-extensions; [ ms-vsliveshare.vsliveshare ];
-        };
-      };
+      legacyPackages = pkgs;
     };
   });
 }
