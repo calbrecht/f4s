@@ -2,22 +2,22 @@
   description = "Local nixpkgs overlays flake";
 
   nixConfig = {
-    flake-registry = https://github.com/calbrecht/f4s-registry/raw/main/flake-registry.json;
+    flake-registry = "https://github.com/calbrecht/f4s-registry/raw/main/flake-registry.json";
   };
 
   inputs = {
-    emacs.url = flake:f4s-emacs;
-    firefox-nightly.url = flake:f4s-firefox-nightly;
-    fixups.url = flake:f4s-fixups;
-    flake-parts.url = flake:flake-parts;
-    global-cursor-theme.url = flake:f4s-global-cursor-theme;
-    nixpkgs.url = flake:nixpkgs;
-    nodejs.url = flake:f4s-nodejs;
-    rust.url = flake:f4s-rust;
-    systems.url = github:nix-systems/x86_64-linux;
+    emacs.url = "flake:f4s-emacs";
+    firefox-nightly.url = "flake:f4s-firefox-nightly";
+    fixups.url = "flake:f4s-fixups";
+    flake-parts.url = "flake:flake-parts";
+    global-cursor-theme.url = "flake:f4s-global-cursor-theme";
+    nixpkgs.url = "flake:nixpkgs";
+    nodejs.url = "flake:f4s-nodejs";
+    rust.url = "flake:f4s-rust";
+    systems.url = "github:nix-systems/x86_64-linux";
     # alacritty fails with "interface 'wl_surface' has no event 2" since a sway-unwrapped update
-    #wayland.url = github:nix-community/nixpkgs-wayland/2022e1a48a42069c0e5357150504206a0199c94b; # bad
-    wayland.url = github:nix-community/nixpkgs-wayland/62ab946a25ad84ce9ce6efb877656af7d733a2f3;  # last known good
+    #wayland.url = "github:nix-community/nixpkgs-wayland/2022e1a48a42069c0e5357150504206a0199c94b"; # bad
+    wayland.url = "github:nix-community/nixpkgs-wayland/62ab946a25ad84ce9ce6efb877656af7d733a2f3";  # last known good
   };
 
   outputs = inputs: let
@@ -25,7 +25,6 @@
       extends
       flip
       foldl'
-      recursiveUpdate
     ;
   in inputs.flake-parts.lib.mkFlake { inherit inputs; } (top: {
     systems = (import inputs.systems);
