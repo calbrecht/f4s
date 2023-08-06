@@ -86,11 +86,11 @@
         "nixpkgs": "nixpkgs_8"
       },
       "locked": {
-        "lastModified": 1691283928,
-        "narHash": "sha256-ooDVdRa3JOvZ3kItpFEPk9hC2iQAHZ/a3qDiUhooodg=",
+        "lastModified": 1691317894,
+        "narHash": "sha256-WFjT1dAwQ3WeJSAyold3d+mVVBk2IfeWFIN1s6zyvkE=",
         "owner": "calbrecht",
         "repo": "f4s-fixups",
-        "rev": "cf0883ab4145a7eb7a8cfb33a6febfdf38f34b65",
+        "rev": "edcfb2a569a0574743f4cb4ceb6880e6a3b1f8bc",
         "type": "github"
       },
       "original": {
