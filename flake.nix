@@ -17,7 +17,8 @@
     systems.url = "github:nix-systems/x86_64-linux";
     # alacritty fails with "interface 'wl_surface' has no event 2" since a sway-unwrapped update
     #wayland.url = "github:nix-community/nixpkgs-wayland/2022e1a48a42069c0e5357150504206a0199c94b"; # bad
-    wayland.url = "github:nix-community/nixpkgs-wayland/62ab946a25ad84ce9ce6efb877656af7d733a2f3";  # last known good
+    # dontcare, use foot
+    wayland.url = "github:nix-community/nixpkgs-wayland";  # last known good
   };
 
   outputs = inputs: let
@@ -45,8 +46,6 @@
         top.config.flake.overlays.global-cursor-theme
         top.config.flake.overlays.firefox-nightly
         (final: prev: {
-          # remove waybar overlay once alacritty starts again from nixpkgs-wayland
-          waybar = prev.waybar.override { inherit (prev) spdlog; };
           vscode = prev.vscode-with-extensions.override {
             vscodeExtensions = with prev.vscode-extensions; [ ms-vsliveshare.vsliveshare ];
           };
