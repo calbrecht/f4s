@@ -57,7 +57,9 @@
         inherit system;
         config = {
           allowUnfree = true;
-          permittedInsecurePackages = [];
+          permittedInsecurePackages = [
+            "openssl-1.1.1v"
+          ];
         };
         overlays = [ top.config.flake.overlays.default ];
       };
