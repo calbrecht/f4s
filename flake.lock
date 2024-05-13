@@ -13,11 +13,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1715494574,
-        "narHash": "sha256-rBVvPD89efg/gnM/58gXMzQK99I8FUxhS7MjBBicsk8=",
+        "lastModified": 1715598847,
+        "narHash": "sha256-gnRuSNxzLIQWcox+C0gIkmRoXDarFUfWjY915owIX1k=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "0e3b5d1cd457f6ce9aee64d8eb10d29dd999c1fa",
+        "rev": "ae83780560253e25d43ee60e2e7397640a11280d",
         "type": "github"
       },
       "original": {
@@ -257,8 +257,8 @@
     "init-leafs": {
       "flake": false,
       "locked": {
-        "lastModified": 1715457391,
-        "narHash": "sha256-CPFInldt84+oRjZqpW5+saocZgP1n8bfH491kPzdccE=",
+        "lastModified": 1715598603,
+        "narHash": "sha256-+WFWCebixNClIzi2wiEz8quK7UPlKmHm49LDRfo5qvY=",
         "path": "/home/alab/.emacs.i/init-leafs.el",
         "type": "path"
       },
