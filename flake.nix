@@ -49,6 +49,12 @@
           vscode = prev.vscode-with-extensions.override {
             vscodeExtensions = with prev.vscode-extensions; [ ms-vsliveshare.vsliveshare ];
           };
+          sway-unwrapped = prev.sway-unwrapped.overrideAttrs (old: {
+            mesonFlags = builtins.filter (a: a != "-Dxwayland=enabled") old.mesonFlags;
+          });
+          sway = prev.sway.override {
+            sway-unwrapped = final.sway-unwrapped;
+          };
         })
       ] final;
     };
