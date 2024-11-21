@@ -13,11 +13,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1732186717,
-        "narHash": "sha256-gygbh1WCX3VyW5q5i4y2661l7oW6onCezDXFd1rjy+M=",
+        "lastModified": 1732194311,
+        "narHash": "sha256-zV7mt7Fk2ECH6U0pe3U/g5GW5e0nDB0Rp8QzbgmsH/4=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "81bf0e51fe512765f1b478c69cefbe1a4ddd3cc4",
+        "rev": "e04e1a57931d31800d33d8422f4bacccec1a4677",
         "type": "github"
       },
       "original": {
@@ -256,8 +256,8 @@
     "init-leafs": {
       "flake": false,
       "locked": {
-        "lastModified": 1731004166,
-        "narHash": "sha256-pARQNDpEp/tLJ9tr8G5xki7IJEmHubzuL2y49CrTVgA=",
+        "lastModified": 1732193799,
+        "narHash": "sha256-OnBa6XnbIkrVA54RsOD7X5ovULEmptI3VwStDo5STHg=",
         "path": "/home/alab/.emacs.i/init-leafs.el",
         "type": "path"
       },
@@ -947,11 +947,11 @@
         "nixpkgs": "nixpkgs_13"
       },
       "locked": {
-        "lastModified": 1732184550,
-        "narHash": "sha256-/SkYQzyYyhtmk34JMqcPzUYh+OfZa8K0JzrToSDobiw=",
+        "lastModified": 1732188582,
+        "narHash": "sha256-cjKJ+P+CoYDLUW4jWm9zLoEGDOLL4Wx0bZuJbJNZiQ8=",
         "owner": "nix-community",
         "repo": "nixpkgs-wayland",
-        "rev": "1faaced7d8efa8e2fe6e6612aef7528e8139c679",
+        "rev": "f08f6c9f79c0501bad2075c173e156649c9b5c25",
         "type": "github"
       },
       "original": {
