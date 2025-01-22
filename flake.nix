@@ -19,6 +19,7 @@
     #wayland.url = "github:nix-community/nixpkgs-wayland/2022e1a48a42069c0e5357150504206a0199c94b"; # bad
     # dontcare, use foot
     wayland.url = "github:nix-community/nixpkgs-wayland";  # last known good
+    waybar.url = "github:Alexays/Waybar";
   };
 
   outputs = inputs: let
@@ -60,6 +61,7 @@
           sway = prev.sway.override {
             sway-unwrapped = final.sway-unwrapped;
           };
+          waybar = inputs.waybar.packages.x86_64-linux.waybar;
         })
       ] final;
     };
