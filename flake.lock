@@ -13,11 +13,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1737709848,
-        "narHash": "sha256-v7SVq0TfplWuY2MsKgFGYF7OvpVrkHZ3PyF+Dofs9H0=",
+        "lastModified": 1737716097,
+        "narHash": "sha256-DULJK4JqJByprK/U2VnikdP4d5XE8HQMfDFxq/0xUPA=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "86a9db8ec99d145950908e8513c92ed0216e9c3b",
+        "rev": "35bc7f3e513743953ef488bb7fac1f92a72e21d7",
         "type": "github"
       },
       "original": {
@@ -422,16 +422,15 @@
     },
     "nixpkgs-mozilla": {
       "locked": {
-        "lastModified": 1690493275,
-        "narHash": "sha256-aRIf2FB2GTdfF7gl13WyETmiV/J7EhBGkSWXfZvlxcA=",
-        "owner": "calbrecht",
+        "lastModified": 1736765918,
+        "narHash": "sha256-oh7GSCjBGHpxaU8/gejT55mlvI3qoKObXgqyn1XR7SA=",
+        "owner": "mozilla",
         "repo": "nixpkgs-mozilla",
-        "rev": "613f5a49fd57edbab2320a73dde686e839b8a8e9",
+        "rev": "534ee26d3dbcbb9da3766c556638b9bcc3627871",
         "type": "github"
       },
       "original": {
-        "owner": "calbrecht",
-        "ref": "fix-build-rust-src",
+        "owner": "mozilla",
         "repo": "nixpkgs-mozilla",
         "type": "github"
       }
@@ -821,11 +820,11 @@
         "nixpkgs-mozilla": "nixpkgs-mozilla"
       },
       "locked": {
-        "lastModified": 1737708638,
-        "narHash": "sha256-ARR37o6VV496M380jefKRLiDvD9EOqCmWQmJLbkvACw=",
+        "lastModified": 1737716086,
+        "narHash": "sha256-iDj1dtWgkM9C7Xw5U4p9eNhicPGMBiQAyGNtiHbFVvA=",
         "owner": "calbrecht",
         "repo": "f4s-rust",
-        "rev": "059d1279a9721da404b99fb3a062de60b0f917ba",
+        "rev": "85b551d97c9d11969b7a2ff9fc26d00f3b43c0e8",
         "type": "github"
       },
       "original": {
