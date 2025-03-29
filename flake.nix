@@ -19,6 +19,7 @@
     #wayland.url = "github:nix-community/nixpkgs-wayland/2022e1a48a42069c0e5357150504206a0199c94b"; # bad
     # dontcare, use foot
     wayland.url = "github:nix-community/nixpkgs-wayland";  # last known good
+    wayland.inputs.nixpkgs.follows = "nixpkgs";
     waybar.url = "github:Alexays/Waybar";
   };
 
@@ -74,7 +75,15 @@
             "openssl-1.1.1v"
           ];
         };
-        overlays = [ top.config.flake.overlays.default ];
+        overlays = [
+          top.config.flake.overlays.default
+          (final: prev: {
+            foot = prev.foot.override {
+              wayland-protocols = prev.new-wayland-protocols;
+              fcft = prev.fcft;
+            };
+          })
+        ];
       };
       legacyPackages = pkgs;
     };
