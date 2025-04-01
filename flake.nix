@@ -78,10 +78,10 @@
         overlays = [
           top.config.flake.overlays.default
           (final: prev: {
-            foot = prev.foot.override {
-              wayland-protocols = prev.new-wayland-protocols;
-              fcft = prev.fcft;
-            };
+            #foot = prev.foot.override {
+            #  wayland-protocols = prev.new-wayland-protocols;
+            #  fcft = prev.fcft;
+            #};
           })
         ];
       };
