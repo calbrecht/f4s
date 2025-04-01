@@ -78,10 +78,17 @@
         overlays = [
           top.config.flake.overlays.default
           (final: prev: {
-            #foot = prev.foot.override {
-            #  wayland-protocols = prev.new-wayland-protocols;
-            #  fcft = prev.fcft;
-            #};
+            foot = prev.foot.override {
+              src = prev.fetchFromGitea {
+                domain = "codeberg.org";
+                owner = "dnkl";
+                repo = "foot";
+                rev = "9b776f2d6de39569670dbd76f635c11a383b8971";
+                sha256 = "sha256-6NUebp3NCxwuvEAPURCtN7dQLHiIyiLBRa9vO8ExfW4=";
+              };
+              wayland-protocols = prev.new-wayland-protocols;
+              fcft = prev.fcft;
+            };
           })
         ];
       };
