@@ -13,11 +13,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1744669673,
-        "narHash": "sha256-h9dKbZXu3lxST6zomqdAENUzjsMmkiIzqC7FW1vuqGQ=",
+        "lastModified": 1744670194,
+        "narHash": "sha256-hqxCTBjjoubZEfXZQySs4ps3u6PAEOUsVmQnLJG0Kmc=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "e7dbf5dddbae461f2d4607d414ec481652dc02a3",
+        "rev": "4b194a20615fbcdeec2f5ec86fce09cfecad9da0",
         "type": "github"
       },
       "original": {
