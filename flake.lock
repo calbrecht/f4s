@@ -13,11 +13,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1744663059,
-        "narHash": "sha256-YelTYEgu6nBdqN0TeUFxvbZAMtfkHbOMDZO5FWthY2s=",
+        "lastModified": 1744665316,
+        "narHash": "sha256-sBwT5BL122oQT704PJzi6Xt70LhiwKtSJ1JEQ2ifJGU=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "9f97bb85316b00b82edb5cf02a85b5ccd3581302",
+        "rev": "f99f91f7083ac3227e1c885b564f04658d176b4b",
         "type": "github"
       },
       "original": {
@@ -39,8 +39,9 @@
         "type": "github"
       },
       "original": {
-        "id": "emacs-overlay",
-        "type": "indirect"
+        "owner": "nix-community",
+        "repo": "emacs-overlay",
+        "type": "github"
       }
     },
     "firefox-nightly": {
@@ -76,8 +77,9 @@
         "type": "github"
       },
       "original": {
-        "id": "f4s-fixups",
-        "type": "indirect"
+        "owner": "calbrecht",
+        "repo": "f4s-fixups",
+        "type": "github"
       }
     },
     "fixups_2": {
@@ -141,8 +143,9 @@
         "type": "github"
       },
       "original": {
-        "id": "flake-parts",
-        "type": "indirect"
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
       }
     },
     "flake-parts_2": {
@@ -484,13 +487,15 @@
       "locked": {
         "lastModified": 1744157173,
         "narHash": "sha256-bWSjxDwq7iVePrhmA7tY2dyMWHuNJo8knkO4y+q4ZkY=",
-        "path": "/nix/store/5r0zii3rap2dyfyip31pdf9f0hpvv3d7-source",
+        "owner": "nixos",
+        "repo": "nixpkgs",
         "rev": "6a39c6e495eefabc935d8ddf66aa45d85b85fa3f",
-        "type": "path"
+        "type": "github"
       },
       "original": {
-        "id": "nixpkgs",
-        "type": "indirect"
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "type": "github"
       }
     },
     "nixpkgs_5": {
@@ -577,8 +582,9 @@
         "type": "github"
       },
       "original": {
-        "id": "f4s-nodejs",
-        "type": "indirect"
+        "owner": "calbrecht",
+        "repo": "f4s-nodejs",
+        "type": "github"
       }
     },
     "nodejs_2": {
@@ -735,8 +741,9 @@
         "type": "github"
       },
       "original": {
-        "id": "f4s-rust",
-        "type": "indirect"
+        "owner": "calbrecht",
+        "repo": "f4s-rust",
+        "type": "github"
       }
     },
     "rust-overlay": {
