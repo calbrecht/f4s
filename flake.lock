@@ -1,27 +1,5 @@
 {
   "nodes": {
-    "conflake": {
-      "inputs": {
-        "nixpkgs": [
-          "emacs",
-          "nix-treesitter",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1739025932,
-        "narHash": "sha256-8BbSpXfJfy3R7XYX43dQeYZJ7K+IDCfGZb1KgRHN0Pg=",
-        "owner": "ratson",
-        "repo": "conflake",
-        "rev": "69b5b014b79ecd457aa698e383602b07d52683c4",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ratson",
-        "repo": "conflake",
-        "type": "github"
-      }
-    },
     "emacs": {
       "inputs": {
         "emacs-overlay": "emacs-overlay",
@@ -29,18 +7,18 @@
         "flake-parts": "flake-parts",
         "init-leafs": "init-leafs",
         "nil": "nil",
-        "nix-treesitter": "nix-treesitter",
         "nixpkgs": "nixpkgs_4",
         "nodejs": "nodejs",
         "rust": "rust",
-        "systems": "systems_3"
+        "systems": "systems_3",
+        "tree-sitter-jq": "tree-sitter-jq"
       },
       "locked": {
-        "lastModified": 1744681576,
-        "narHash": "sha256-HAz09VLkx1R6bLy5eiNLEfwyi0M7kbAu2wAadDGVMyY=",
+        "lastModified": 1744700447,
+        "narHash": "sha256-YI/WD5uNhrk7Jm6izUGAUJJfxVkDZ7+Yu9x+Eggq5cs=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "6f2afca2e3c6554ec333e5645908ea4a72884fec",
+        "rev": "e765ec63aa22509fbf3aafb4a2c0ad62d3dcf304",
         "type": "github"
       },
       "original": {
@@ -54,11 +32,11 @@
         "nixpkgs-stable": "nixpkgs-stable"
       },
       "locked": {
-        "lastModified": 1744680246,
-        "narHash": "sha256-UOHy0oLPV5Lg48Mqc7ZyuC7b8lVlqyKluiGgq8Idkog=",
+        "lastModified": 1744683403,
+        "narHash": "sha256-ZphiIohrkf7bG5eKzQHhZqrpyiygbqdBrId6UgAHWOY=",
         "owner": "nix-community",
         "repo": "emacs-overlay",
-        "rev": "a4216bb03c069faf34c355b6c915c93a2eeb559e",
+        "rev": "d601c3de7e1932384a43585408a398ddccf3e1c6",
         "type": "github"
       },
       "original": {
@@ -322,28 +300,6 @@
         "owner": "oxalica",
         "repo": "nil",
         "rev": "70df371289962554cf7a23ed595b23a2ce271960",
-        "type": "github"
-      }
-    },
-    "nix-treesitter": {
-      "inputs": {
-        "conflake": "conflake",
-        "nixpkgs": [
-          "emacs",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1739028560,
-        "narHash": "sha256-7joUNhdZfSkuGL65Lbsmuf/NviUjuGtAhbfdPYuFGjk=",
-        "owner": "ratson",
-        "repo": "nix-treesitter",
-        "rev": "d9d35e37a5b2aee2f3f4d14c66e2bf0604dae4ce",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ratson",
-        "repo": "nix-treesitter",
         "type": "github"
       }
     },
@@ -904,6 +860,22 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "tree-sitter-jq": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1740598207,
+        "narHash": "sha256-1lKg/mQdjNMdiKvFBf4aAkGBBNKCnJ+OOqRfZJ8ly4M=",
+        "owner": "nverno",
+        "repo": "tree-sitter-jq",
+        "rev": "1e139eba1fd3a9c34a36f0f0f47ed8b73c9b4636",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nverno",
+        "repo": "tree-sitter-jq",
         "type": "github"
       }
     },
