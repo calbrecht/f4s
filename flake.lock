@@ -14,11 +14,11 @@
         "tree-sitter-jq": "tree-sitter-jq"
       },
       "locked": {
-        "lastModified": 1746102092,
-        "narHash": "sha256-DQtiOfasIo0xmufymU5g36t++kW+5R14elvp8bZAH5Y=",
+        "lastModified": 1746688081,
+        "narHash": "sha256-Q66ASfhkdmnrr0m3SoRj2W7EL9OrgXO+/hrwwSBE3rQ=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "b5c6bca210496fcde3ad79e4f0d0c6305b97b5cd",
+        "rev": "b3722f5a449935dcb61f39f5d17c76c2dcf674ba",
         "type": "github"
       },
       "original": {
@@ -250,8 +250,8 @@
     "init-leafs": {
       "flake": false,
       "locked": {
-        "lastModified": 1745659755,
-        "narHash": "sha256-kPS4su9AZwG7hnoVycAvAcm4Rm6xZsJqQJ71hyJKMfA=",
+        "lastModified": 1746304464,
+        "narHash": "sha256-U0atnnV/AIqUmPbrncr6vU+MMS8aXeDiFVyTMQrRiP4=",
         "path": "/home/alab/.emacs.i/init-leafs.el",
         "type": "path"
       },
