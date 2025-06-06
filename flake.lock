@@ -53,11 +53,11 @@
         "nss-dev": "nss-dev"
       },
       "locked": {
-        "lastModified": 1749120942,
-        "narHash": "sha256-H12mRgLPB0AnBTC+K3bS9uMBda2LlyNeEKVWtJzYQYs=",
+        "lastModified": 1749210938,
+        "narHash": "sha256-OHpA2qmErRl7tVKebZX+R4b/2udcP+ng3e3JACI3Zrc=",
         "owner": "calbrecht",
         "repo": "f4s-firefox-nightly",
-        "rev": "a2325edcc9eec14cda09b06c2f67c78d168c6156",
+        "rev": "0d084bafe4ff7105c92c67682407608a8f65cc23",
         "type": "github"
       },
       "original": {
@@ -884,11 +884,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1749130430,
-        "narHash": "sha256-1ustFEWvRkQspfsBecxgy0do7xVxTIFTi/P6Y3OjiCU=",
+        "lastModified": 1749178285,
+        "narHash": "sha256-W3ENVtK3tu0GafQPDnOx9zH2hbBYrYe0iHXaT+T8Fvs=",
         "owner": "nix-community",
         "repo": "nixpkgs-wayland",
-        "rev": "0f3c640fb40d367d1b9c8395f05d2ff4cc47253d",
+        "rev": "7bbbe60aeb7edcfa2956554f040c3148d3aec8ec",
         "type": "github"
       },
       "original": {
