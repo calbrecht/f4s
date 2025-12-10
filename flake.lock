@@ -14,11 +14,11 @@
         "tree-sitter-jq": "tree-sitter-jq"
       },
       "locked": {
-        "lastModified": 1765391347,
-        "narHash": "sha256-FwK58VdBcgmlMNqb3Fs0G5lQ15xeSXsLhRZv6cH0+zU=",
+        "lastModified": 1765393158,
+        "narHash": "sha256-SDU1rn7LEvPXJQoqGDeoH5BGt0YfoglZNf7jh0aj064=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "dcc1bef90bf012e774ecc88c9a1d3a17c5543c8b",
+        "rev": "e0e54766ace962eaa1d980dfd4cfe153ba9c6099",
         "type": "github"
       },
       "original": {
