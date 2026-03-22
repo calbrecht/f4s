@@ -63,15 +63,7 @@
               vscode = prev.vscode-with-extensions.override {
                 vscodeExtensions = with prev.vscode-extensions; [ ms-vsliveshare.vsliveshare ];
               };
-              sway-unwrapped = prev.sway-unwrapped.overrideAttrs (old: {
-                mesonFlags = builtins.filter (a: a != "-Dxwayland=enabled") old.mesonFlags;
-                patches = builtins.filter (
-                  a: (a ? name && a.name != "libinput-1.27-p1.patch" && a.name != "libinput-1.27-p2.patch")
-                ) old.patches;
-              });
-              sway = prev.sway.override {
-                sway-unwrapped = final.sway-unwrapped;
-              };
+
               waybar = inputs.waybar.packages.x86_64-linux.waybar;
 
               foot =
