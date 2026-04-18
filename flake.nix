@@ -54,7 +54,7 @@
           foldl' (flip extends) (_: prev) [
             top.config.flake.overlays.fixups
             top.config.flake.overlays.rust
-            top.config.flake.overlays.nodejs
+            #top.config.flake.overlays.nodejs
             top.config.flake.overlays.emacs
             top.config.flake.overlays.wayland
             top.config.flake.overlays.global-cursor-theme
