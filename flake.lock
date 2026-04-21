@@ -73,11 +73,11 @@
         "nss-dev": "nss-dev"
       },
       "locked": {
-        "lastModified": 1776510379,
-        "narHash": "sha256-T8Vmhsx8xr1QBDKfx6ZP5eGlPK2w93sjFtzqcVuqozo=",
+        "lastModified": 1776770287,
+        "narHash": "sha256-ffWmucLZMpQAn+NbA8AeyiU9RecPi0Ej3ulpTbHpVQ8=",
         "owner": "calbrecht",
         "repo": "f4s-firefox-nightly",
-        "rev": "f073e3ae8be3769be15cf0ee16e3ca9ce6cbe095",
+        "rev": "b8ed419685e53e3df27cb1720c3d762b694edcbc",
         "type": "github"
       },
       "original": {
