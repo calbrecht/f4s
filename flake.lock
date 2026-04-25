@@ -63,29 +63,6 @@
         "type": "github"
       }
     },
-    "firefox-nightly": {
-      "inputs": {
-        "mozilla-firefox": "mozilla-firefox",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "nspr-dev": "nspr-dev",
-        "nss-dev": "nss-dev"
-      },
-      "locked": {
-        "lastModified": 1777072179,
-        "narHash": "sha256-JOMefRrgdokmAunSYlal0N6w8E1ww72cIkIY/yuMrAw=",
-        "owner": "calbrecht",
-        "repo": "f4s-firefox-nightly",
-        "rev": "493bb0f352d427125b8a60013ea10b08b9c48e57",
-        "type": "github"
-      },
-      "original": {
-        "owner": "calbrecht",
-        "repo": "f4s-firefox-nightly",
-        "type": "github"
-      }
-    },
     "fixups": {
       "inputs": {
         "nixpkgs": [
@@ -235,23 +212,6 @@
         "type": "github"
       }
     },
-    "mozilla-firefox": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1777055637,
-        "narHash": "sha256-dhh5K9pC2muAn94bHPKeUvLXG2N2GQZ8xFY5QulSvoc=",
-        "owner": "mozilla-firefox",
-        "repo": "firefox",
-        "rev": "6b89bca67c0838ba5b95e57577a67e07cbc956c1",
-        "type": "github"
-      },
-      "original": {
-        "owner": "mozilla-firefox",
-        "repo": "firefox",
-        "rev": "6b89bca67c0838ba5b95e57577a67e07cbc956c1",
-        "type": "github"
-      }
-    },
     "nixd": {
       "inputs": {
         "flake-parts": [
@@ -379,79 +339,6 @@
         "type": "github"
       }
     },
-    "nspr-dev": {
-      "inputs": {
-        "nixpkgs": [
-          "firefox-nightly",
-          "nixpkgs"
-        ],
-        "nspr-dev-src": "nspr-dev-src"
-      },
-      "locked": {
-        "lastModified": 1645267535,
-        "narHash": "sha256-b/a97mevsYbsxf0eJLex3mRJ4xIm2zERPDzsyVt+ECM=",
-        "owner": "calbrecht",
-        "repo": "f4s-nspr",
-        "rev": "0a7cfc53fe9c3bfe4490c48ef8d14f6ff4a01d05",
-        "type": "github"
-      },
-      "original": {
-        "owner": "calbrecht",
-        "repo": "f4s-nspr",
-        "type": "github"
-      }
-    },
-    "nspr-dev-src": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-pl+JYhaIMxFG7Lpe2yaLhihczNwZG0fU8W/Ita6ZQDg=",
-        "type": "tarball",
-        "url": "https://hg.mozilla.org/projects/nspr/archive/NSPR_4_32_RTM.zip"
-      },
-      "original": {
-        "type": "tarball",
-        "url": "https://hg.mozilla.org/projects/nspr/archive/NSPR_4_32_RTM.zip"
-      }
-    },
-    "nss-dev": {
-      "inputs": {
-        "nixpkgs": [
-          "firefox-nightly",
-          "nixpkgs"
-        ],
-        "nss-dev-src": "nss-dev-src"
-      },
-      "locked": {
-        "lastModified": 1645267550,
-        "narHash": "sha256-Bm5SKcX9CEPBY5UGh7XywQsqG0YZw++lOZizF8AvasI=",
-        "owner": "calbrecht",
-        "repo": "f4s-nss",
-        "rev": "a90415a9b366e15733858077727b626c992e6390",
-        "type": "github"
-      },
-      "original": {
-        "owner": "calbrecht",
-        "repo": "f4s-nss",
-        "type": "github"
-      }
-    },
-    "nss-dev-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1634569972,
-        "narHash": "sha256-WnUslakuCWD98ftuLkICHnjQtxbl+zZjXhOXLbuxQaA=",
-        "owner": "nss-dev",
-        "repo": "nss",
-        "rev": "cea7654c90aaed1d1e29f735ce765974c08898df",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nss-dev",
-        "repo": "nss",
-        "rev": "cea7654c90aaed1d1e29f735ce765974c08898df",
-        "type": "github"
-      }
-    },
     "pkgs-src": {
       "flake": false,
       "locked": {
@@ -473,7 +360,6 @@
     "root": {
       "inputs": {
         "emacs": "emacs",
-        "firefox-nightly": "firefox-nightly",
         "fixups": "fixups",
         "flake-parts": "flake-parts",
         "global-cursor-theme": "global-cursor-theme",

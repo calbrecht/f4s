@@ -10,8 +10,8 @@
     emacs.inputs.rust.follows = "rust";
     emacs.inputs.treefmt-nix.follows = "treefmt-nix";
     emacs.inputs.systems.follows = "systems";
-    firefox-nightly.url = "github:calbrecht/f4s-firefox-nightly";
-    firefox-nightly.inputs.nixpkgs.follows = "nixpkgs";
+    #firefox-nightly.url = "github:calbrecht/f4s-firefox-nightly";
+    #firefox-nightly.inputs.nixpkgs.follows = "nixpkgs";
     fixups.url = "github:calbrecht/f4s-fixups";
     fixups.inputs.nixpkgs.follows = "nixpkgs";
     flake-parts.url = "github:hercules-ci/flake-parts";
@@ -48,7 +48,7 @@
         emacs = inputs.emacs.overlays.default;
         wayland = inputs.wayland.overlays.default;
         global-cursor-theme = inputs.global-cursor-theme.overlay;
-        firefox-nightly = inputs.firefox-nightly.overlay;
+        #firefox-nightly = inputs.firefox-nightly.overlay;
         default =
           final: prev:
           foldl' (flip extends) (_: prev) [
@@ -58,7 +58,7 @@
             top.config.flake.overlays.emacs
             top.config.flake.overlays.wayland
             top.config.flake.overlays.global-cursor-theme
-            top.config.flake.overlays.firefox-nightly
+            #top.config.flake.overlays.firefox-nightly
             (final: prev: {
               vscode = prev.vscode-with-extensions.override {
                 vscodeExtensions = with prev.vscode-extensions; [ ms-vsliveshare.vsliveshare ];
