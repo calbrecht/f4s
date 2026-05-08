@@ -28,11 +28,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1778258238,
-        "narHash": "sha256-U8pEq3LMTkK07/WQpYRFlDLgeKl2YpEupAhrNexC/fc=",
+        "lastModified": 1778258398,
+        "narHash": "sha256-nFpY5ANS9kspuDo2nCj1Jy2UlpQVrsSnDh5uJxGzOgA=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "4eb43025bb35217ec323025f5b425d66e387c542",
+        "rev": "f60941628d90fcd0501eba4c702e9a2c59dccc5b",
         "type": "github"
       },
       "original": {
@@ -382,11 +382,11 @@
         "treefmt-nix": "treefmt-nix_2"
       },
       "locked": {
-        "lastModified": 1778258225,
-        "narHash": "sha256-vH/LVreGpWUJ8H7PPphDnsEnMgCYc87HsHRgVv42WrM=",
+        "lastModified": 1778258306,
+        "narHash": "sha256-liQJ5huddrOI2vBA0gG1HN8OPmVPdounDv7+NAGIxPQ=",
         "owner": "calbrecht",
         "repo": "f4s-nodejs",
-        "rev": "a5b563db21d22d5e406a0ba94935313546d930eb",
+        "rev": "8c709f52bf66d66a982016c3ff56928b66a263b4",
         "type": "github"
       },
       "original": {
