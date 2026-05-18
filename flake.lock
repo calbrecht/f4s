@@ -28,11 +28,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1779087663,
-        "narHash": "sha256-dckh/2S7mXXYY11hMfOlI+N8dOyTHfdrw/qgdhU0XWI=",
+        "lastModified": 1779088706,
+        "narHash": "sha256-GGHj8qKTduhHVMFY8h+3Ee4vc2I2bwII1ozI3DP4e6s=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "7ceccfef3e34fd12551d14b00a433adaee2b2043",
+        "rev": "2cbb765831aecc5d1b7f974dbf650444c2709eb9",
         "type": "github"
       },
       "original": {
@@ -70,11 +70,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1779087219,
-        "narHash": "sha256-/qMpl5w98USu7zw2mQye2DzQkseEK27QxTXt7eW4XGA=",
+        "lastModified": 1779088667,
+        "narHash": "sha256-oZmnUWXsJtlzI1ERNMXLqVF0yA0qgftYZF672rxclYo=",
         "owner": "calbrecht",
         "repo": "f4s-fixups",
-        "rev": "e4ed6a6927b3844b0d4d365ce9f755bcb1131ac1",
+        "rev": "da89951d2a14a853c0039680d70b4f5a9ae8b626",
         "type": "github"
       },
       "original": {
