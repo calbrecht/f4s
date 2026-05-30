@@ -554,15 +554,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1779722932,
-        "narHash": "sha256-5+d4z4zBK3T0SDXlr7nQm/5HGurT+efi44ekDaj5h9s=",
-        "owner": "nix-community",
+        "lastModified": 1780142183,
+        "narHash": "sha256-pe5LXWwsPdidRF9sir5/zghCOve6GWiNSpUyFQnG/mE=",
+        "owner": "calbrecht",
         "repo": "nixpkgs-wayland",
-        "rev": "9d162d0e5841b110e5cc36480198e5bc37088932",
+        "rev": "d7cba2763f116affc7af8eaab20ecf3b8022c33e",
         "type": "github"
       },
       "original": {
-        "owner": "nix-community",
+        "owner": "calbrecht",
+        "ref": "sway-unwrapped-wlroots-bump",
         "repo": "nixpkgs-wayland",
         "type": "github"
       }
