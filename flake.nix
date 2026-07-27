@@ -26,7 +26,8 @@
     treefmt-nix.inputs.nixpkgs.follows = "nixpkgs";
     waybar.url = "github:Alexays/Waybar";
     waybar.inputs.nixpkgs.follows = "nixpkgs";
-    wayland.url = "github:calbrecht/nixpkgs-wayland/sway-unwrapped-wlroots-bump";
+    #wayland.url = "github:calbrecht/nixpkgs-wayland/sway-unwrapped-wlroots-bump";
+    wayland.url = "github:nix-community/nixpkgs-wayland";
     wayland.inputs.nixpkgs.follows = "nixpkgs";
   };
 
