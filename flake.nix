@@ -67,16 +67,6 @@
 
               waybar = inputs.waybar.packages.x86_64-linux.waybar;
 
-              xdg-desktop-portal-wlr = prev.xdg-desktop-portal-wlr.overrideAttrs (old: {
-                version = "2026-07-28-git";
-                src = prev.fetchFromGitHub {
-                  owner = "emersion";
-                  repo = "xdg-desktop-portal-wlr";
-                  rev = "4f70821cee131d1cb90ba979fea7bc13588ce09f";
-                  hash = "sha256-WR9BtCj9pz75qJU3wUK/S2kyOipz0KH0rIYQmJDNzIU=";
-                };
-              });
-
               foot = (
                 prev.foot.override {
                   wayland-protocols = prev.new-wayland-protocols;
