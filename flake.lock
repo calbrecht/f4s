@@ -28,11 +28,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1785348241,
-        "narHash": "sha256-Sv+T6VK+3RifIYKWzP4vjqGyTvnD5SlyWopmEjhzBIY=",
+        "lastModified": 1785348385,
+        "narHash": "sha256-AEfMvpJCOY/eAdqQpw2NiCxbvtEfG486AKWOX9UxJoQ=",
         "owner": "calbrecht",
         "repo": "f4s-emacs",
-        "rev": "fd4dc19d0d7f2311514f90830ea604a2ec9140ce",
+        "rev": "223c9547b3f46d716220d6a65be4f7af3bf1b118",
         "type": "github"
       },
       "original": {
@@ -50,11 +50,11 @@
         "nixpkgs-stable": "nixpkgs-stable"
       },
       "locked": {
-        "lastModified": 1785347224,
-        "narHash": "sha256-6fl9j5S4xb4SsyPOmfkm9ZtxCANf1YdNM3mCbQDIXIA=",
+        "lastModified": 1785348306,
+        "narHash": "sha256-IP1SaI49kVlwwPef6J0XlHc8D/3NhpImvHhHa0391dM=",
         "owner": "nix-community",
         "repo": "emacs-overlay",
-        "rev": "b27f80fd6933db1be7c4d3095b2e9c6785c93264",
+        "rev": "207cd03de87851d5c66399b43014c9db51fff174",
         "type": "github"
       },
       "original": {
@@ -382,11 +382,11 @@
         "treefmt-nix": "treefmt-nix_2"
       },
       "locked": {
-        "lastModified": 1785348227,
-        "narHash": "sha256-+q8td+mrAiZT3O7FfbabADFpbtZcmhD1IWGLDMoZtvg=",
+        "lastModified": 1785348306,
+        "narHash": "sha256-4GS8+JbKtJxggWqggFZSp5jpOyhpppViJIZPNEIxxuA=",
         "owner": "calbrecht",
         "repo": "f4s-nodejs",
-        "rev": "2f86962f43e34e0f0eaec7de9751bb6bf6174845",
+        "rev": "94f30925a0be5da4be30a9c6627dad5164ed5e40",
         "type": "github"
       },
       "original": {
