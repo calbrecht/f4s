@@ -76,16 +76,16 @@
 
               # zig-wayland 0.2.0 emits postError() for error enums newer than the target version
               wayprompt = prev.wayprompt.overrideAttrs (
-                final: old: {
-                  deps = prev.runCommand "zig-packages-patched" { } ''
-                    cp -rL ${old.deps} $out; chmod -R u+w $out
-                    substituteInPlace $out/*/src/scanner.zig --replace-fail \
+                old: {
+                  postConfigure = ''
+                    cp -rL ${old.deps} zig-deps; chmod -R u+w zig-deps
+                    substituteInPlace zig-deps/*/src/scanner.zig --replace-fail \
                       'if (mem.eql(u8, e.name, "error")) break true;' \
                       'if (mem.eql(u8, e.name, "error") and e.since <= target_version) break true;'
                   '';
                   zigBuildFlags = [
                     "--system"
-                    "${final.deps}"
+                    "zig-deps"
                   ];
                 }
               );
