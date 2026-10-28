@@ -26,7 +26,7 @@
     systems.url = "github:nix-systems/x86_64-linux";
     treefmt-nix.url = "github:numtide/treefmt-nix";
     treefmt-nix.inputs.nixpkgs.follows = "nixpkgs";
-    waybar.url = "github:Alexays/Waybar";
+    waybar.url = "github:Alexays/Waybar/4ff7d11a184507261aabf265b2fb81a1717e791c";
     waybar.inputs.nixpkgs.follows = "nixpkgs";
     #wayland.url = "github:calbrecht/nixpkgs-wayland/sway-unwrapped-wlroots-bump";
     wayland.url = "github:nix-community/nixpkgs-wayland";
