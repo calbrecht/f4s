@@ -298,11 +298,11 @@
         "wayland": "wayland"
       },
       "locked": {
-        "lastModified": 1793211493,
-        "narHash": "sha256-MEiUhQ3Et8oVca3he5TKmnuZaEt1/0Em4u3KgbQGg/g=",
+        "lastModified": 1793212883,
+        "narHash": "sha256-avKRtbXHZBAmJKJASKEqKxBKCNRdm9fNyXN1wEnb5PM=",
         "ref": "refs/heads/lsterm",
-        "rev": "53265fd106434006fdd95439f0740f6432a88d81",
-        "revCount": 23,
+        "rev": "c7dc07aef6cd5e9c0147cdd69f08355ab2a69581",
+        "revCount": 24,
         "type": "git",
         "url": "file:///f4s/launcher"
       },
@@ -760,11 +760,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1793166062,
-        "narHash": "sha256-y/YCLYMa8jMeFM03WSHtz48OMP3zmSQXn53hklw1XTo=",
+        "lastModified": 1793212087,
+        "narHash": "sha256-tGrTPScQNgaRZ6/G+V6xGJD0uASPvtAeoUXuVvWeSks=",
         "owner": "nix-community",
         "repo": "nixpkgs-wayland",
-        "rev": "915d2c2452f22d3b355e66ec63a9472f2aa91ab6",
+        "rev": "f212bba2ba68e4d0fb6ff3807e3b46ac59a22b20",
         "type": "github"
       },
       "original": {
@@ -782,11 +782,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1793166062,
-        "narHash": "sha256-y/YCLYMa8jMeFM03WSHtz48OMP3zmSQXn53hklw1XTo=",
+        "lastModified": 1793212087,
+        "narHash": "sha256-tGrTPScQNgaRZ6/G+V6xGJD0uASPvtAeoUXuVvWeSks=",
         "owner": "nix-community",
         "repo": "nixpkgs-wayland",
-        "rev": "915d2c2452f22d3b355e66ec63a9472f2aa91ab6",
+        "rev": "f212bba2ba68e4d0fb6ff3807e3b46ac59a22b20",
         "type": "github"
       },
       "original": {
