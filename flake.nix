@@ -16,6 +16,8 @@
     fixups.inputs.nixpkgs.follows = "nixpkgs";
     flake-parts.url = "github:hercules-ci/flake-parts";
     global-cursor-theme.url = "github:calbrecht/f4s-global-cursor-theme";
+    launcher.url = "git+file:///ws/play/launcher";
+    launcher.inputs.nixpkgs.follows = "nixpkgs";
     nixpkgs.url = "github:nixos/nixpkgs";
     nodejs.url = "github:calbrecht/f4s-nodejs";
     nodejs.inputs.nixpkgs.follows = "nixpkgs";
@@ -61,6 +63,7 @@
             top.config.flake.overlays.global-cursor-theme
             #top.config.flake.overlays.firefox-nightly
             (final: prev: {
+              launcher = inputs.launcher.packages.x86_64-linux.default;
               vscode = prev.vscode-with-extensions.override {
                 vscodeExtensions = with prev.vscode-extensions; [ ms-vsliveshare.vsliveshare ];
               };
