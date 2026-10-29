@@ -17,7 +17,7 @@
     fixups.inputs.nixpkgs.follows = "nixpkgs";
     flake-parts.url = "github:hercules-ci/flake-parts";
     global-cursor-theme.url = "github:calbrecht/f4s-global-cursor-theme";
-    launcher.url = "git+file:///f4s/launcher";
+    launcher.url = "git+file:/f4s/launcher";
     launcher.inputs.nixpkgs.follows = "nixpkgs";
     nixpkgs.url = "github:nixos/nixpkgs";
     nodejs.url = "github:calbrecht/f4s-nodejs";
