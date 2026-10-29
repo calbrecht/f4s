@@ -7,7 +7,8 @@
     emacs.inputs.flake-parts.follows = "flake-parts";
     emacs.inputs.nixpkgs.follows = "nixpkgs";
     emacs.inputs.nodejs.follows = "nodejs";
-    emacs.inputs.rust.follows = "rust";
+    #emacs.inputs.rust.follows = "rust";
+    emacs.inputs.rust-overlay.follows = "rust-overlay";
     emacs.inputs.treefmt-nix.follows = "treefmt-nix";
     emacs.inputs.systems.follows = "systems";
     #firefox-nightly.url = "github:calbrecht/f4s-firefox-nightly";
@@ -21,8 +22,10 @@
     nixpkgs.url = "github:nixos/nixpkgs";
     nodejs.url = "github:calbrecht/f4s-nodejs";
     nodejs.inputs.nixpkgs.follows = "nixpkgs";
-    rust.url = "github:calbrecht/f4s-rust";
-    rust.inputs.nixpkgs.follows = "nixpkgs";
+    rust-overlay.url = "github:oxalica/rust-overlay";
+    rust-overlay.inputs.nixpkgs.follows = "nixpkgs";
+    #rust.url = "github:calbrecht/f4s-rust";
+    #rust.inputs.nixpkgs.follows = "nixpkgs";
     systems.url = "github:nix-systems/x86_64-linux";
     treefmt-nix.url = "github:numtide/treefmt-nix";
     treefmt-nix.inputs.nixpkgs.follows = "nixpkgs";
@@ -46,7 +49,8 @@
       systems = (import inputs.systems);
       flake.overlays = {
         fixups = inputs.fixups.overlays.default;
-        rust = inputs.rust.overlay;
+        #rust = inputs.rust.overlay;
+        rust-overlay = inputs.rust-overlay.overlays.default;
         nodejs = inputs.nodejs.overlay;
         emacs = inputs.emacs.overlays.default;
         wayland = inputs.wayland.overlays.default;
@@ -56,7 +60,8 @@
           final: prev:
           foldl' (flip extends) (_: prev) [
             top.config.flake.overlays.fixups
-            top.config.flake.overlays.rust
+            #top.config.flake.overlays.rust
+            top.config.flake.overlays.rust-overlay
             #top.config.flake.overlays.nodejs
             top.config.flake.overlays.emacs
             top.config.flake.overlays.wayland
