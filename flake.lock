@@ -298,11 +298,11 @@
         "wayland": "wayland"
       },
       "locked": {
-        "lastModified": 1793280377,
-        "narHash": "sha256-xV31eD7Peqxw7k9RQXms1Wz0GjWNCS7qzUzZkjGDC2g=",
+        "lastModified": 1793285391,
+        "narHash": "sha256-1A2e+YGPRKDV2cRujXutxuDwFdwQ9npbxVRR02LR50A=",
         "ref": "refs/heads/lsterm",
-        "rev": "5acb0e1461caa64352c738cc2bea49e92f7e3a29",
-        "revCount": 26,
+        "rev": "efd8b279a6d72ce7000dcd1a5a57b13c7e4f97b3",
+        "revCount": 27,
         "type": "git",
         "url": "file:/f4s/launcher"
       },
